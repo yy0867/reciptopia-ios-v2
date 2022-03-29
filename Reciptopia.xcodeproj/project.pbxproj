@@ -1,0 +1,1394 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A541589927F3280900C851A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541589827F3280900C851A2 /* AppDelegate.swift */; };
+		A54158A227F3280A00C851A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A54158A127F3280A00C851A2 /* Assets.xcassets */; };
+		A54158A527F3280A00C851A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A54158A327F3280A00C851A2 /* LaunchScreen.storyboard */; };
+		A54158B027F3280A00C851A2 /* ReciptopiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54158AF27F3280A00C851A2 /* ReciptopiaTests.swift */; };
+		A54158BA27F3280A00C851A2 /* ReciptopiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54158B927F3280A00C851A2 /* ReciptopiaUITests.swift */; };
+		A54158BC27F3280A00C851A2 /* ReciptopiaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54158BB27F3280A00C851A2 /* ReciptopiaUITestsLaunchTests.swift */; };
+		A54158D627F328AB00C851A2 /* Reciptopia_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A54158CE27F328AB00C851A2 /* Reciptopia_iOS.framework */; };
+		A54158DE27F328AB00C851A2 /* Reciptopia_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = A54158D027F328AB00C851A2 /* Reciptopia_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A54158E127F328AB00C851A2 /* Reciptopia_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A54158CE27F328AB00C851A2 /* Reciptopia_iOS.framework */; };
+		A54158E227F328AB00C851A2 /* Reciptopia_iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A54158CE27F328AB00C851A2 /* Reciptopia_iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A54158F927F3293C00C851A2 /* ReciptopiaUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A54158F127F3293C00C851A2 /* ReciptopiaUIKit.framework */; };
+		A541590027F3293C00C851A2 /* BaseViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54158FF27F3293C00C851A2 /* BaseViewTests.swift */; };
+		A541590127F3293C00C851A2 /* ReciptopiaUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A54158F327F3293C00C851A2 /* ReciptopiaUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A541590427F3293C00C851A2 /* ReciptopiaUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A54158F127F3293C00C851A2 /* ReciptopiaUIKit.framework */; };
+		A541590527F3293C00C851A2 /* ReciptopiaUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A54158F127F3293C00C851A2 /* ReciptopiaUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A541590F27F329A900C851A2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541590E27F329A900C851A2 /* BaseViewController.swift */; };
+		A541591327F32BA600C851A2 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541591227F32BA600C851A2 /* BaseView.swift */; };
+		A541591627F334F200C851A2 /* BackCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541591527F334F200C851A2 /* BackCameraView.swift */; };
+		A541591827F348A700C851A2 /* PictureIngredientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541591727F348A700C851A2 /* PictureIngredientViewController.swift */; };
+		A541591A27F348EB00C851A2 /* PictureIngredientRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541591927F348EB00C851A2 /* PictureIngredientRootView.swift */; };
+		A541591D27F3490F00C851A2 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A541591C27F3490F00C851A2 /* SnapKit */; };
+		A541592727F34A2E00C851A2 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = A541592627F34A2E00C851A2 /* RxCocoa */; };
+		A541592927F34A2E00C851A2 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = A541592827F34A2E00C851A2 /* RxRelay */; };
+		A541592B27F34A2E00C851A2 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A541592A27F34A2E00C851A2 /* RxSwift */; };
+		A541592D27F34ADA00C851A2 /* PictureIngredientViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541592C27F34ADA00C851A2 /* PictureIngredientViewModel.swift */; };
+		A541593127F34CEB00C851A2 /* BehaviorRelay+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541593027F34CEB00C851A2 /* BehaviorRelay+.swift */; };
+		A541593527F34E0800C851A2 /* BehaviorRelayExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541593327F34DF500C851A2 /* BehaviorRelayExtensionTests.swift */; };
+		A541593727F34F4400C851A2 /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = A541593627F34F4400C851A2 /* RxTest */; };
+		A541593B27F3578100C851A2 /* XCTestCase+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541593927F3513B00C851A2 /* XCTestCase+.swift */; };
+		A541593E27F35B6F00C851A2 /* PictureIngredientAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541593D27F35B6F00C851A2 /* PictureIngredientAction.swift */; };
+		A541594027F35D4800C851A2 /* @ButtonWithTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541593F27F35D4800C851A2 /* @ButtonWithTitle.swift */; };
+		A541594327F35E9200C851A2 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541594227F35E9200C851A2 /* UIColor+.swift */; };
+		A541594627F35FE400C851A2 /* ButtonWithTitleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541594427F35FDE00C851A2 /* ButtonWithTitleTests.swift */; };
+		A541594927F360EF00C851A2 /* XCTestCase+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541593927F3513B00C851A2 /* XCTestCase+.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A54158AC27F3280A00C851A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A541588D27F3280900C851A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A541589427F3280900C851A2;
+			remoteInfo = Reciptopia;
+		};
+		A54158B627F3280A00C851A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A541588D27F3280900C851A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A541589427F3280900C851A2;
+			remoteInfo = Reciptopia;
+		};
+		A54158D727F328AB00C851A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A541588D27F3280900C851A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A54158CD27F328AB00C851A2;
+			remoteInfo = Reciptopia_iOS;
+		};
+		A54158D927F328AB00C851A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A541588D27F3280900C851A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A541589427F3280900C851A2;
+			remoteInfo = Reciptopia;
+		};
+		A54158DF27F328AB00C851A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A541588D27F3280900C851A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A54158CD27F328AB00C851A2;
+			remoteInfo = Reciptopia_iOS;
+		};
+		A54158FA27F3293C00C851A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A541588D27F3280900C851A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A54158F027F3293C00C851A2;
+			remoteInfo = ReciptopiaUIKit;
+		};
+		A54158FC27F3293C00C851A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A541588D27F3280900C851A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A541589427F3280900C851A2;
+			remoteInfo = Reciptopia;
+		};
+		A541590227F3293C00C851A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A541588D27F3280900C851A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A54158F027F3293C00C851A2;
+			remoteInfo = ReciptopiaUIKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A54158E627F328AB00C851A2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A54158E227F328AB00C851A2 /* Reciptopia_iOS.framework in Embed Frameworks */,
+				A541590527F3293C00C851A2 /* ReciptopiaUIKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A541589527F3280900C851A2 /* Reciptopia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reciptopia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A541589827F3280900C851A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A54158A127F3280A00C851A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A54158A427F3280A00C851A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A54158A627F3280A00C851A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A54158AB27F3280A00C851A2 /* ReciptopiaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReciptopiaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A54158AF27F3280A00C851A2 /* ReciptopiaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReciptopiaTests.swift; sourceTree = "<group>"; };
+		A54158B527F3280A00C851A2 /* ReciptopiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReciptopiaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A54158B927F3280A00C851A2 /* ReciptopiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReciptopiaUITests.swift; sourceTree = "<group>"; };
+		A54158BB27F3280A00C851A2 /* ReciptopiaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReciptopiaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A54158CE27F328AB00C851A2 /* Reciptopia_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Reciptopia_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A54158D027F328AB00C851A2 /* Reciptopia_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reciptopia_iOS.h; sourceTree = "<group>"; };
+		A54158D527F328AB00C851A2 /* Reciptopia_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Reciptopia_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A54158F127F3293C00C851A2 /* ReciptopiaUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReciptopiaUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A54158F327F3293C00C851A2 /* ReciptopiaUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReciptopiaUIKit.h; sourceTree = "<group>"; };
+		A54158F827F3293C00C851A2 /* ReciptopiaUIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReciptopiaUIKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A54158FF27F3293C00C851A2 /* BaseViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewTests.swift; sourceTree = "<group>"; };
+		A541590E27F329A900C851A2 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		A541591227F32BA600C851A2 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		A541591527F334F200C851A2 /* BackCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackCameraView.swift; sourceTree = "<group>"; };
+		A541591727F348A700C851A2 /* PictureIngredientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureIngredientViewController.swift; sourceTree = "<group>"; };
+		A541591927F348EB00C851A2 /* PictureIngredientRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureIngredientRootView.swift; sourceTree = "<group>"; };
+		A541592C27F34ADA00C851A2 /* PictureIngredientViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureIngredientViewModel.swift; sourceTree = "<group>"; };
+		A541593027F34CEB00C851A2 /* BehaviorRelay+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BehaviorRelay+.swift"; sourceTree = "<group>"; };
+		A541593327F34DF500C851A2 /* BehaviorRelayExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BehaviorRelayExtensionTests.swift; sourceTree = "<group>"; };
+		A541593927F3513B00C851A2 /* XCTestCase+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+.swift"; sourceTree = "<group>"; };
+		A541593D27F35B6F00C851A2 /* PictureIngredientAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureIngredientAction.swift; sourceTree = "<group>"; };
+		A541593F27F35D4800C851A2 /* @ButtonWithTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "@ButtonWithTitle.swift"; sourceTree = "<group>"; };
+		A541594227F35E9200C851A2 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		A541594427F35FDE00C851A2 /* ButtonWithTitleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithTitleTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A541589227F3280900C851A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A54158E127F328AB00C851A2 /* Reciptopia_iOS.framework in Frameworks */,
+				A541590427F3293C00C851A2 /* ReciptopiaUIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A54158A827F3280A00C851A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A54158B227F3280A00C851A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A54158CB27F328AB00C851A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A541592927F34A2E00C851A2 /* RxRelay in Frameworks */,
+				A541592727F34A2E00C851A2 /* RxCocoa in Frameworks */,
+				A541592B27F34A2E00C851A2 /* RxSwift in Frameworks */,
+				A541591D27F3490F00C851A2 /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A54158D227F328AB00C851A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A541593727F34F4400C851A2 /* RxTest in Frameworks */,
+				A54158D627F328AB00C851A2 /* Reciptopia_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A54158EE27F3293C00C851A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A54158F527F3293C00C851A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A54158F927F3293C00C851A2 /* ReciptopiaUIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A541588C27F3280900C851A2 = {
+			isa = PBXGroup;
+			children = (
+				A541589727F3280900C851A2 /* Reciptopia */,
+				A54158CF27F328AB00C851A2 /* Reciptopia_iOS */,
+				A54158F227F3293C00C851A2 /* ReciptopiaUIKit */,
+				A541589627F3280900C851A2 /* Products */,
+				A541592527F34A2E00C851A2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A541589627F3280900C851A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A541589527F3280900C851A2 /* Reciptopia.app */,
+				A54158AB27F3280A00C851A2 /* ReciptopiaTests.xctest */,
+				A54158B527F3280A00C851A2 /* ReciptopiaUITests.xctest */,
+				A54158CE27F328AB00C851A2 /* Reciptopia_iOS.framework */,
+				A54158D527F328AB00C851A2 /* Reciptopia_iOSTests.xctest */,
+				A54158F127F3293C00C851A2 /* ReciptopiaUIKit.framework */,
+				A54158F827F3293C00C851A2 /* ReciptopiaUIKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A541589727F3280900C851A2 /* Reciptopia */ = {
+			isa = PBXGroup;
+			children = (
+				A541594727F360DE00C851A2 /* Extension */,
+				A54158C827F3285900C851A2 /* Test */,
+				A541589827F3280900C851A2 /* AppDelegate.swift */,
+				A54158A127F3280A00C851A2 /* Assets.xcassets */,
+				A54158A327F3280A00C851A2 /* LaunchScreen.storyboard */,
+				A54158A627F3280A00C851A2 /* Info.plist */,
+			);
+			path = Reciptopia;
+			sourceTree = "<group>";
+		};
+		A54158AE27F3280A00C851A2 /* ReciptopiaTests */ = {
+			isa = PBXGroup;
+			children = (
+				A54158AF27F3280A00C851A2 /* ReciptopiaTests.swift */,
+			);
+			path = ReciptopiaTests;
+			sourceTree = "<group>";
+		};
+		A54158B827F3280A00C851A2 /* ReciptopiaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A54158B927F3280A00C851A2 /* ReciptopiaUITests.swift */,
+				A54158BB27F3280A00C851A2 /* ReciptopiaUITestsLaunchTests.swift */,
+			);
+			path = ReciptopiaUITests;
+			sourceTree = "<group>";
+		};
+		A54158C827F3285900C851A2 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				A54158AE27F3280A00C851A2 /* ReciptopiaTests */,
+				A54158B827F3280A00C851A2 /* ReciptopiaUITests */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		A54158CF27F328AB00C851A2 /* Reciptopia_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A54158D027F328AB00C851A2 /* Reciptopia_iOS.h */,
+				A541592F27F34CD700C851A2 /* Extension */,
+				A54158EB27F3290400C851A2 /* PictureIngredient */,
+				A54158DB27F328AB00C851A2 /* Test */,
+			);
+			path = Reciptopia_iOS;
+			sourceTree = "<group>";
+		};
+		A54158DB27F328AB00C851A2 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				A541593227F34DE400C851A2 /* ExtensionTests */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		A54158EB27F3290400C851A2 /* PictureIngredient */ = {
+			isa = PBXGroup;
+			children = (
+				A541591727F348A700C851A2 /* PictureIngredientViewController.swift */,
+				A541591927F348EB00C851A2 /* PictureIngredientRootView.swift */,
+				A541592C27F34ADA00C851A2 /* PictureIngredientViewModel.swift */,
+				A541593D27F35B6F00C851A2 /* PictureIngredientAction.swift */,
+			);
+			path = PictureIngredient;
+			sourceTree = "<group>";
+		};
+		A54158F227F3293C00C851A2 /* ReciptopiaUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				A54158F327F3293C00C851A2 /* ReciptopiaUIKit.h */,
+				A541594127F35E8400C851A2 /* Extension */,
+				A541591427F334D800C851A2 /* UIKitBase */,
+				A541590C27F3295700C851A2 /* Reusable */,
+				A54158FE27F3293C00C851A2 /* Test */,
+			);
+			path = ReciptopiaUIKit;
+			sourceTree = "<group>";
+		};
+		A54158FE27F3293C00C851A2 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				A54158FF27F3293C00C851A2 /* BaseViewTests.swift */,
+				A541594427F35FDE00C851A2 /* ButtonWithTitleTests.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		A541590C27F3295700C851A2 /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				A541591527F334F200C851A2 /* BackCameraView.swift */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
+		A541591427F334D800C851A2 /* UIKitBase */ = {
+			isa = PBXGroup;
+			children = (
+				A541590E27F329A900C851A2 /* BaseViewController.swift */,
+				A541591227F32BA600C851A2 /* BaseView.swift */,
+				A541593F27F35D4800C851A2 /* @ButtonWithTitle.swift */,
+			);
+			path = UIKitBase;
+			sourceTree = "<group>";
+		};
+		A541592527F34A2E00C851A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A541592E27F34CCA00C851A2 /* RxRelayExtension */ = {
+			isa = PBXGroup;
+			children = (
+				A541593027F34CEB00C851A2 /* BehaviorRelay+.swift */,
+			);
+			path = RxRelayExtension;
+			sourceTree = "<group>";
+		};
+		A541592F27F34CD700C851A2 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A541592E27F34CCA00C851A2 /* RxRelayExtension */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A541593227F34DE400C851A2 /* ExtensionTests */ = {
+			isa = PBXGroup;
+			children = (
+				A541593327F34DF500C851A2 /* BehaviorRelayExtensionTests.swift */,
+			);
+			path = ExtensionTests;
+			sourceTree = "<group>";
+		};
+		A541594127F35E8400C851A2 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A541594227F35E9200C851A2 /* UIColor+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A541594727F360DE00C851A2 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A541594827F360E600C851A2 /* Test */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A541594827F360E600C851A2 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				A541593927F3513B00C851A2 /* XCTestCase+.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A54158C927F328AB00C851A2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A54158DE27F328AB00C851A2 /* Reciptopia_iOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A54158EC27F3293C00C851A2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A541590127F3293C00C851A2 /* ReciptopiaUIKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A541589427F3280900C851A2 /* Reciptopia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A54158BF27F3280A00C851A2 /* Build configuration list for PBXNativeTarget "Reciptopia" */;
+			buildPhases = (
+				A541589127F3280900C851A2 /* Sources */,
+				A541589227F3280900C851A2 /* Frameworks */,
+				A541589327F3280900C851A2 /* Resources */,
+				A54158E627F328AB00C851A2 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A54158E027F328AB00C851A2 /* PBXTargetDependency */,
+				A541590327F3293C00C851A2 /* PBXTargetDependency */,
+			);
+			name = Reciptopia;
+			packageProductDependencies = (
+			);
+			productName = Reciptopia;
+			productReference = A541589527F3280900C851A2 /* Reciptopia.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A54158AA27F3280A00C851A2 /* ReciptopiaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A54158C227F3280A00C851A2 /* Build configuration list for PBXNativeTarget "ReciptopiaTests" */;
+			buildPhases = (
+				A54158A727F3280A00C851A2 /* Sources */,
+				A54158A827F3280A00C851A2 /* Frameworks */,
+				A54158A927F3280A00C851A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A54158AD27F3280A00C851A2 /* PBXTargetDependency */,
+			);
+			name = ReciptopiaTests;
+			productName = ReciptopiaTests;
+			productReference = A54158AB27F3280A00C851A2 /* ReciptopiaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A54158B427F3280A00C851A2 /* ReciptopiaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A54158C527F3280A00C851A2 /* Build configuration list for PBXNativeTarget "ReciptopiaUITests" */;
+			buildPhases = (
+				A54158B127F3280A00C851A2 /* Sources */,
+				A54158B227F3280A00C851A2 /* Frameworks */,
+				A54158B327F3280A00C851A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A54158B727F3280A00C851A2 /* PBXTargetDependency */,
+			);
+			name = ReciptopiaUITests;
+			productName = ReciptopiaUITests;
+			productReference = A54158B527F3280A00C851A2 /* ReciptopiaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		A54158CD27F328AB00C851A2 /* Reciptopia_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A54158E327F328AB00C851A2 /* Build configuration list for PBXNativeTarget "Reciptopia_iOS" */;
+			buildPhases = (
+				A54158C927F328AB00C851A2 /* Headers */,
+				A54158CA27F328AB00C851A2 /* Sources */,
+				A54158CB27F328AB00C851A2 /* Frameworks */,
+				A54158CC27F328AB00C851A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Reciptopia_iOS;
+			packageProductDependencies = (
+				A541591C27F3490F00C851A2 /* SnapKit */,
+				A541592627F34A2E00C851A2 /* RxCocoa */,
+				A541592827F34A2E00C851A2 /* RxRelay */,
+				A541592A27F34A2E00C851A2 /* RxSwift */,
+			);
+			productName = Reciptopia_iOS;
+			productReference = A54158CE27F328AB00C851A2 /* Reciptopia_iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A54158D427F328AB00C851A2 /* Reciptopia_iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A54158E727F328AB00C851A2 /* Build configuration list for PBXNativeTarget "Reciptopia_iOSTests" */;
+			buildPhases = (
+				A54158D127F328AB00C851A2 /* Sources */,
+				A54158D227F328AB00C851A2 /* Frameworks */,
+				A54158D327F328AB00C851A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A54158D827F328AB00C851A2 /* PBXTargetDependency */,
+				A54158DA27F328AB00C851A2 /* PBXTargetDependency */,
+			);
+			name = Reciptopia_iOSTests;
+			packageProductDependencies = (
+				A541593627F34F4400C851A2 /* RxTest */,
+			);
+			productName = Reciptopia_iOSTests;
+			productReference = A54158D527F328AB00C851A2 /* Reciptopia_iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A54158F027F3293C00C851A2 /* ReciptopiaUIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A541590627F3293C00C851A2 /* Build configuration list for PBXNativeTarget "ReciptopiaUIKit" */;
+			buildPhases = (
+				A54158EC27F3293C00C851A2 /* Headers */,
+				A54158ED27F3293C00C851A2 /* Sources */,
+				A54158EE27F3293C00C851A2 /* Frameworks */,
+				A54158EF27F3293C00C851A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReciptopiaUIKit;
+			productName = ReciptopiaUIKit;
+			productReference = A54158F127F3293C00C851A2 /* ReciptopiaUIKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A54158F727F3293C00C851A2 /* ReciptopiaUIKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A541590927F3293C00C851A2 /* Build configuration list for PBXNativeTarget "ReciptopiaUIKitTests" */;
+			buildPhases = (
+				A54158F427F3293C00C851A2 /* Sources */,
+				A54158F527F3293C00C851A2 /* Frameworks */,
+				A54158F627F3293C00C851A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A54158FB27F3293C00C851A2 /* PBXTargetDependency */,
+				A54158FD27F3293C00C851A2 /* PBXTargetDependency */,
+			);
+			name = ReciptopiaUIKitTests;
+			productName = ReciptopiaUIKitTests;
+			productReference = A54158F827F3293C00C851A2 /* ReciptopiaUIKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A541588D27F3280900C851A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					A541589427F3280900C851A2 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					A54158AA27F3280A00C851A2 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = A541589427F3280900C851A2;
+					};
+					A54158B427F3280A00C851A2 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = A541589427F3280900C851A2;
+					};
+					A54158CD27F328AB00C851A2 = {
+						CreatedOnToolsVersion = 13.3;
+						LastSwiftMigration = 1330;
+					};
+					A54158D427F328AB00C851A2 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = A541589427F3280900C851A2;
+					};
+					A54158F027F3293C00C851A2 = {
+						CreatedOnToolsVersion = 13.3;
+						LastSwiftMigration = 1330;
+					};
+					A54158F727F3293C00C851A2 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = A541589427F3280900C851A2;
+					};
+				};
+			};
+			buildConfigurationList = A541589027F3280900C851A2 /* Build configuration list for PBXProject "Reciptopia" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A541588C27F3280900C851A2;
+			packageReferences = (
+				A541591B27F3490F00C851A2 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				A541591E27F34A1800C851A2 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
+			productRefGroup = A541589627F3280900C851A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A541589427F3280900C851A2 /* Reciptopia */,
+				A54158AA27F3280A00C851A2 /* ReciptopiaTests */,
+				A54158B427F3280A00C851A2 /* ReciptopiaUITests */,
+				A54158CD27F328AB00C851A2 /* Reciptopia_iOS */,
+				A54158D427F328AB00C851A2 /* Reciptopia_iOSTests */,
+				A54158F027F3293C00C851A2 /* ReciptopiaUIKit */,
+				A54158F727F3293C00C851A2 /* ReciptopiaUIKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A541589327F3280900C851A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A54158A527F3280A00C851A2 /* LaunchScreen.storyboard in Resources */,
+				A54158A227F3280A00C851A2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A54158A927F3280A00C851A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A54158B327F3280A00C851A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A54158CC27F328AB00C851A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A54158D327F328AB00C851A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A54158EF27F3293C00C851A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A54158F627F3293C00C851A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A541589127F3280900C851A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A541589927F3280900C851A2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A54158A727F3280A00C851A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A54158B027F3280A00C851A2 /* ReciptopiaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A54158B127F3280A00C851A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A54158BC27F3280A00C851A2 /* ReciptopiaUITestsLaunchTests.swift in Sources */,
+				A54158BA27F3280A00C851A2 /* ReciptopiaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A54158CA27F328AB00C851A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A541591A27F348EB00C851A2 /* PictureIngredientRootView.swift in Sources */,
+				A541593127F34CEB00C851A2 /* BehaviorRelay+.swift in Sources */,
+				A541593E27F35B6F00C851A2 /* PictureIngredientAction.swift in Sources */,
+				A541592D27F34ADA00C851A2 /* PictureIngredientViewModel.swift in Sources */,
+				A541591827F348A700C851A2 /* PictureIngredientViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A54158D127F328AB00C851A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A541593B27F3578100C851A2 /* XCTestCase+.swift in Sources */,
+				A541593527F34E0800C851A2 /* BehaviorRelayExtensionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A54158ED27F3293C00C851A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A541594027F35D4800C851A2 /* @ButtonWithTitle.swift in Sources */,
+				A541591627F334F200C851A2 /* BackCameraView.swift in Sources */,
+				A541590F27F329A900C851A2 /* BaseViewController.swift in Sources */,
+				A541591327F32BA600C851A2 /* BaseView.swift in Sources */,
+				A541594327F35E9200C851A2 /* UIColor+.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A54158F427F3293C00C851A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A541594627F35FE400C851A2 /* ButtonWithTitleTests.swift in Sources */,
+				A541590027F3293C00C851A2 /* BaseViewTests.swift in Sources */,
+				A541594927F360EF00C851A2 /* XCTestCase+.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A54158AD27F3280A00C851A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A541589427F3280900C851A2 /* Reciptopia */;
+			targetProxy = A54158AC27F3280A00C851A2 /* PBXContainerItemProxy */;
+		};
+		A54158B727F3280A00C851A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A541589427F3280900C851A2 /* Reciptopia */;
+			targetProxy = A54158B627F3280A00C851A2 /* PBXContainerItemProxy */;
+		};
+		A54158D827F328AB00C851A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A54158CD27F328AB00C851A2 /* Reciptopia_iOS */;
+			targetProxy = A54158D727F328AB00C851A2 /* PBXContainerItemProxy */;
+		};
+		A54158DA27F328AB00C851A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A541589427F3280900C851A2 /* Reciptopia */;
+			targetProxy = A54158D927F328AB00C851A2 /* PBXContainerItemProxy */;
+		};
+		A54158E027F328AB00C851A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A54158CD27F328AB00C851A2 /* Reciptopia_iOS */;
+			targetProxy = A54158DF27F328AB00C851A2 /* PBXContainerItemProxy */;
+		};
+		A54158FB27F3293C00C851A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A54158F027F3293C00C851A2 /* ReciptopiaUIKit */;
+			targetProxy = A54158FA27F3293C00C851A2 /* PBXContainerItemProxy */;
+		};
+		A54158FD27F3293C00C851A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A541589427F3280900C851A2 /* Reciptopia */;
+			targetProxy = A54158FC27F3293C00C851A2 /* PBXContainerItemProxy */;
+		};
+		A541590327F3293C00C851A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A54158F027F3293C00C851A2 /* ReciptopiaUIKit */;
+			targetProxy = A541590227F3293C00C851A2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A54158A327F3280A00C851A2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A54158A427F3280A00C851A2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A54158BD27F3280A00C851A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A54158BE27F3280A00C851A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A54158C027F3280A00C851A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GTB6BR222W;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Reciptopia/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Harry.Reciptopia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A54158C127F3280A00C851A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GTB6BR222W;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Reciptopia/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Harry.Reciptopia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A54158C327F3280A00C851A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GTB6BR222W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Harry.ReciptopiaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reciptopia.app/Reciptopia";
+			};
+			name = Debug;
+		};
+		A54158C427F3280A00C851A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GTB6BR222W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Harry.ReciptopiaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reciptopia.app/Reciptopia";
+			};
+			name = Release;
+		};
+		A54158C627F3280A00C851A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GTB6BR222W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Harry.ReciptopiaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Reciptopia;
+			};
+			name = Debug;
+		};
+		A54158C727F3280A00C851A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GTB6BR222W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Harry.ReciptopiaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Reciptopia;
+			};
+			name = Release;
+		};
+		A54158E427F328AB00C851A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = GTB6BR222W;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Harry.Reciptopia-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A54158E527F328AB00C851A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = GTB6BR222W;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Harry.Reciptopia-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A54158E827F328AB00C851A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GTB6BR222W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Harry.Reciptopia-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reciptopia.app/Reciptopia";
+			};
+			name = Debug;
+		};
+		A54158E927F328AB00C851A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GTB6BR222W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Harry.Reciptopia-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reciptopia.app/Reciptopia";
+			};
+			name = Release;
+		};
+		A541590727F3293C00C851A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = GTB6BR222W;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Harry.ReciptopiaUIKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A541590827F3293C00C851A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = GTB6BR222W;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Harry.ReciptopiaUIKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A541590A27F3293C00C851A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GTB6BR222W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Harry.ReciptopiaUIKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reciptopia.app/Reciptopia";
+			};
+			name = Debug;
+		};
+		A541590B27F3293C00C851A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GTB6BR222W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Harry.ReciptopiaUIKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reciptopia.app/Reciptopia";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A541589027F3280900C851A2 /* Build configuration list for PBXProject "Reciptopia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A54158BD27F3280A00C851A2 /* Debug */,
+				A54158BE27F3280A00C851A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A54158BF27F3280A00C851A2 /* Build configuration list for PBXNativeTarget "Reciptopia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A54158C027F3280A00C851A2 /* Debug */,
+				A54158C127F3280A00C851A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A54158C227F3280A00C851A2 /* Build configuration list for PBXNativeTarget "ReciptopiaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A54158C327F3280A00C851A2 /* Debug */,
+				A54158C427F3280A00C851A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A54158C527F3280A00C851A2 /* Build configuration list for PBXNativeTarget "ReciptopiaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A54158C627F3280A00C851A2 /* Debug */,
+				A54158C727F3280A00C851A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A54158E327F328AB00C851A2 /* Build configuration list for PBXNativeTarget "Reciptopia_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A54158E427F328AB00C851A2 /* Debug */,
+				A54158E527F328AB00C851A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A54158E727F328AB00C851A2 /* Build configuration list for PBXNativeTarget "Reciptopia_iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A54158E827F328AB00C851A2 /* Debug */,
+				A54158E927F328AB00C851A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A541590627F3293C00C851A2 /* Build configuration list for PBXNativeTarget "ReciptopiaUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A541590727F3293C00C851A2 /* Debug */,
+				A541590827F3293C00C851A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A541590927F3293C00C851A2 /* Build configuration list for PBXNativeTarget "ReciptopiaUIKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A541590A27F3293C00C851A2 /* Debug */,
+				A541590B27F3293C00C851A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A541591B27F3490F00C851A2 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		A541591E27F34A1800C851A2 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A541591C27F3490F00C851A2 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A541591B27F3490F00C851A2 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		A541592627F34A2E00C851A2 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A541591E27F34A1800C851A2 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		A541592827F34A2E00C851A2 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A541591E27F34A1800C851A2 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		A541592A27F34A2E00C851A2 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A541591E27F34A1800C851A2 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		A541593627F34F4400C851A2 /* RxTest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A541591E27F34A1800C851A2 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxTest;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A541588D27F3280900C851A2 /* Project object */;
+}
