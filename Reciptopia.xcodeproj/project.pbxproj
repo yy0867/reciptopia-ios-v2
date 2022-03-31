@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A536FED427F54C3000B3D947 /* PictureIngredientNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A536FED327F54C3000B3D947 /* PictureIngredientNavigationController.swift */; };
+		A536FED627F54C8400B3D947 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A536FED527F54C8400B3D947 /* BaseNavigationController.swift */; };
 		A541589927F3280900C851A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541589827F3280900C851A2 /* AppDelegate.swift */; };
 		A54158A227F3280A00C851A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A54158A127F3280A00C851A2 /* Assets.xcassets */; };
 		A54158A527F3280A00C851A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A54158A327F3280A00C851A2 /* LaunchScreen.storyboard */; };
@@ -37,10 +39,19 @@
 		A541593727F34F4400C851A2 /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = A541593627F34F4400C851A2 /* RxTest */; };
 		A541593B27F3578100C851A2 /* XCTestCase+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541593927F3513B00C851A2 /* XCTestCase+.swift */; };
 		A541593E27F35B6F00C851A2 /* PictureIngredientAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541593D27F35B6F00C851A2 /* PictureIngredientAction.swift */; };
-		A541594027F35D4800C851A2 /* @ButtonWithTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541593F27F35D4800C851A2 /* @ButtonWithTitle.swift */; };
+		A541594027F35D4800C851A2 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541593F27F35D4800C851A2 /* UIButton+.swift */; };
 		A541594327F35E9200C851A2 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541594227F35E9200C851A2 /* UIColor+.swift */; };
-		A541594627F35FE400C851A2 /* ButtonWithTitleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541594427F35FDE00C851A2 /* ButtonWithTitleTests.swift */; };
+		A541594627F35FE400C851A2 /* UIButtonExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541594427F35FDE00C851A2 /* UIButtonExtensionTests.swift */; };
 		A541594927F360EF00C851A2 /* XCTestCase+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541593927F3513B00C851A2 /* XCTestCase+.swift */; };
+		A541594C27F36A5100C851A2 /* PictureIngredientViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541594B27F36A5100C851A2 /* PictureIngredientViewModelTests.swift */; };
+		A541594F27F36AEF00C851A2 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541594E27F36AEF00C851A2 /* Log.swift */; };
+		A541595027F36B1600C851A2 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541594E27F36AEF00C851A2 /* Log.swift */; };
+		A541595227F36B1800C851A2 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541594E27F36AEF00C851A2 /* Log.swift */; };
+		A541595327F36B1800C851A2 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541594E27F36AEF00C851A2 /* Log.swift */; };
+		A541595427F36B1900C851A2 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541594E27F36AEF00C851A2 /* Log.swift */; };
+		A541595527F36B1A00C851A2 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541594E27F36AEF00C851A2 /* Log.swift */; };
+		A58D833A27F5503E0093CD72 /* PictureIngredientViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58D833827F550360093CD72 /* PictureIngredientViewControllerTests.swift */; };
+		A5E0577527F41AC200646852 /* PictureIngredientRootViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E0577427F41AC200646852 /* PictureIngredientRootViewTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +129,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A536FED327F54C3000B3D947 /* PictureIngredientNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureIngredientNavigationController.swift; sourceTree = "<group>"; };
+		A536FED527F54C8400B3D947 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		A541589527F3280900C851A2 /* Reciptopia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reciptopia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A541589827F3280900C851A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A54158A127F3280A00C851A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -145,9 +158,13 @@
 		A541593327F34DF500C851A2 /* BehaviorRelayExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BehaviorRelayExtensionTests.swift; sourceTree = "<group>"; };
 		A541593927F3513B00C851A2 /* XCTestCase+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+.swift"; sourceTree = "<group>"; };
 		A541593D27F35B6F00C851A2 /* PictureIngredientAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureIngredientAction.swift; sourceTree = "<group>"; };
-		A541593F27F35D4800C851A2 /* @ButtonWithTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "@ButtonWithTitle.swift"; sourceTree = "<group>"; };
+		A541593F27F35D4800C851A2 /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
 		A541594227F35E9200C851A2 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
-		A541594427F35FDE00C851A2 /* ButtonWithTitleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithTitleTests.swift; sourceTree = "<group>"; };
+		A541594427F35FDE00C851A2 /* UIButtonExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtensionTests.swift; sourceTree = "<group>"; };
+		A541594B27F36A5100C851A2 /* PictureIngredientViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureIngredientViewModelTests.swift; sourceTree = "<group>"; };
+		A541594E27F36AEF00C851A2 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		A58D833827F550360093CD72 /* PictureIngredientViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureIngredientViewControllerTests.swift; sourceTree = "<group>"; };
+		A5E0577427F41AC200646852 /* PictureIngredientRootViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureIngredientRootViewTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,12 +257,12 @@
 		A541589727F3280900C851A2 /* Reciptopia */ = {
 			isa = PBXGroup;
 			children = (
-				A541594727F360DE00C851A2 /* Extension */,
-				A54158C827F3285900C851A2 /* Test */,
 				A541589827F3280900C851A2 /* AppDelegate.swift */,
 				A54158A127F3280A00C851A2 /* Assets.xcassets */,
 				A54158A327F3280A00C851A2 /* LaunchScreen.storyboard */,
 				A54158A627F3280A00C851A2 /* Info.plist */,
+				A541594D27F36AE300C851A2 /* Global */,
+				A54158C827F3285900C851A2 /* Test */,
 			);
 			path = Reciptopia;
 			sourceTree = "<group>";
@@ -290,6 +307,7 @@
 		A54158DB27F328AB00C851A2 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				A541594A27F36A2A00C851A2 /* PictureIngredient */,
 				A541593227F34DE400C851A2 /* ExtensionTests */,
 			);
 			path = Test;
@@ -298,10 +316,12 @@
 		A54158EB27F3290400C851A2 /* PictureIngredient */ = {
 			isa = PBXGroup;
 			children = (
+				A536FED327F54C3000B3D947 /* PictureIngredientNavigationController.swift */,
 				A541591727F348A700C851A2 /* PictureIngredientViewController.swift */,
 				A541591927F348EB00C851A2 /* PictureIngredientRootView.swift */,
 				A541592C27F34ADA00C851A2 /* PictureIngredientViewModel.swift */,
 				A541593D27F35B6F00C851A2 /* PictureIngredientAction.swift */,
+				A58D833B27F551430093CD72 /* ManagePicture */,
 			);
 			path = PictureIngredient;
 			sourceTree = "<group>";
@@ -322,7 +342,7 @@
 			isa = PBXGroup;
 			children = (
 				A54158FF27F3293C00C851A2 /* BaseViewTests.swift */,
-				A541594427F35FDE00C851A2 /* ButtonWithTitleTests.swift */,
+				A541594427F35FDE00C851A2 /* UIButtonExtensionTests.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -340,7 +360,7 @@
 			children = (
 				A541590E27F329A900C851A2 /* BaseViewController.swift */,
 				A541591227F32BA600C851A2 /* BaseView.swift */,
-				A541593F27F35D4800C851A2 /* @ButtonWithTitle.swift */,
+				A536FED527F54C8400B3D947 /* BaseNavigationController.swift */,
 			);
 			path = UIKitBase;
 			sourceTree = "<group>";
@@ -380,6 +400,7 @@
 			isa = PBXGroup;
 			children = (
 				A541594227F35E9200C851A2 /* UIColor+.swift */,
+				A541593F27F35D4800C851A2 /* UIButton+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -398,6 +419,32 @@
 				A541593927F3513B00C851A2 /* XCTestCase+.swift */,
 			);
 			path = Test;
+			sourceTree = "<group>";
+		};
+		A541594A27F36A2A00C851A2 /* PictureIngredient */ = {
+			isa = PBXGroup;
+			children = (
+				A541594B27F36A5100C851A2 /* PictureIngredientViewModelTests.swift */,
+				A5E0577427F41AC200646852 /* PictureIngredientRootViewTests.swift */,
+				A58D833827F550360093CD72 /* PictureIngredientViewControllerTests.swift */,
+			);
+			path = PictureIngredient;
+			sourceTree = "<group>";
+		};
+		A541594D27F36AE300C851A2 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				A541594727F360DE00C851A2 /* Extension */,
+				A541594E27F36AEF00C851A2 /* Log.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		A58D833B27F551430093CD72 /* ManagePicture */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ManagePicture;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -689,6 +736,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A541594F27F36AEF00C851A2 /* Log.swift in Sources */,
 				A541589927F3280900C851A2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -697,6 +745,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A541595027F36B1600C851A2 /* Log.swift in Sources */,
 				A54158B027F3280A00C851A2 /* ReciptopiaTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -716,7 +765,9 @@
 			files = (
 				A541591A27F348EB00C851A2 /* PictureIngredientRootView.swift in Sources */,
 				A541593127F34CEB00C851A2 /* BehaviorRelay+.swift in Sources */,
+				A541595227F36B1800C851A2 /* Log.swift in Sources */,
 				A541593E27F35B6F00C851A2 /* PictureIngredientAction.swift in Sources */,
+				A536FED427F54C3000B3D947 /* PictureIngredientNavigationController.swift in Sources */,
 				A541592D27F34ADA00C851A2 /* PictureIngredientViewModel.swift in Sources */,
 				A541591827F348A700C851A2 /* PictureIngredientViewController.swift in Sources */,
 			);
@@ -726,8 +777,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A58D833A27F5503E0093CD72 /* PictureIngredientViewControllerTests.swift in Sources */,
 				A541593B27F3578100C851A2 /* XCTestCase+.swift in Sources */,
 				A541593527F34E0800C851A2 /* BehaviorRelayExtensionTests.swift in Sources */,
+				A541595327F36B1800C851A2 /* Log.swift in Sources */,
+				A541594C27F36A5100C851A2 /* PictureIngredientViewModelTests.swift in Sources */,
+				A5E0577527F41AC200646852 /* PictureIngredientRootViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -735,8 +790,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A541594027F35D4800C851A2 /* @ButtonWithTitle.swift in Sources */,
+				A541594027F35D4800C851A2 /* UIButton+.swift in Sources */,
+				A536FED627F54C8400B3D947 /* BaseNavigationController.swift in Sources */,
 				A541591627F334F200C851A2 /* BackCameraView.swift in Sources */,
+				A541595427F36B1900C851A2 /* Log.swift in Sources */,
 				A541590F27F329A900C851A2 /* BaseViewController.swift in Sources */,
 				A541591327F32BA600C851A2 /* BaseView.swift in Sources */,
 				A541594327F35E9200C851A2 /* UIColor+.swift in Sources */,
@@ -747,8 +804,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A541594627F35FE400C851A2 /* ButtonWithTitleTests.swift in Sources */,
+				A541594627F35FE400C851A2 /* UIButtonExtensionTests.swift in Sources */,
 				A541590027F3293C00C851A2 /* BaseViewTests.swift in Sources */,
+				A541595527F36B1A00C851A2 /* Log.swift in Sources */,
 				A541594927F360EF00C851A2 /* XCTestCase+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
