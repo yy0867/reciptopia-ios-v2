@@ -9,9 +9,7 @@ import SnapKit
 
 public class ImageCell: UICollectionViewCell {
     
-    // MARK: - Properties
-    public static let reuseIdentifier = String(describing: ImageCell.self)
-    
+    // MARK: - Properties    
     lazy var imageView: UIImageView = {
         let imageView = UIImageView()
         return imageView
