@@ -6,11 +6,14 @@
 //
 
 import ReciptopiaUIKit
+import RxSwift
+import RxRelay
 
 public final class PictureIngredientViewController: BaseViewController {
     
     // MARK: - Properties
     let viewModel: PictureIngredientViewModel
+    let disposeBag = DisposeBag()
     
     lazy var searchButton: UIButton = {
         let button = UIButton()
@@ -37,6 +40,7 @@ public final class PictureIngredientViewController: BaseViewController {
     public init(viewModel: PictureIngredientViewModel) {
         self.viewModel = viewModel
         super.init()
+        observeViewModel()
     }
     
     public override func viewDidLoad() {
@@ -57,5 +61,42 @@ public final class PictureIngredientViewController: BaseViewController {
             action: #selector(PictureIngredientViewModel.searchByName),
             for: .touchUpInside
         )
+    }
+}
+
+// MARK: - Bind ViewModel
+extension PictureIngredientViewController {
+    func observeViewModel() {
+        viewModel.action
+            .bind(onNext: { [weak self] action in
+                switch action {
+                    case .search: self?.presentSearch()
+                    case .notification: self?.presentNotification()
+                    case .managePicture: self?.presentManagePicture()
+                    case .analyze: self?.presentAnalyze()
+                    case .album: self?.presentAlbum()
+                }
+            })
+            .disposed(by: disposeBag)
+    }
+    
+    private func presentSearch() {
+        
+    }
+    
+    private func presentNotification() {
+        
+    }
+    
+    private func presentManagePicture() {
+        
+    }
+    
+    private func presentAnalyze() {
+        
+    }
+    
+    private func presentAlbum() {
+        
     }
 }
