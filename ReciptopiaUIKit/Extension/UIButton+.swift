@@ -19,7 +19,8 @@ public extension UIButton {
         font: UIFont = .systemFont(ofSize: 16)
     ) {
         self.init(frame: .zero)
-        self.backgroundColor = backgroundColor
+        self.setBackgroundColor(backgroundColor, for: .normal)
+        self.setBackgroundColor(.gray, for: .disabled)
         self.setTitleColor(titleColor, for: .normal)
         self.setTitle(title, for: .normal)
         self.titleLabel?.font = font
