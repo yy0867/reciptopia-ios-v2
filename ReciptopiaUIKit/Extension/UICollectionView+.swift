@@ -22,4 +22,12 @@ public extension UICollectionView {
         let reuseIdentifier = CellClass.reuseIdentifier
         self.register(CellClass.self, forCellWithReuseIdentifier: reuseIdentifier)
     }
+    
+    func dequeue<T>(_ CellClass: T.Type, at indexPath: IndexPath) -> T? where T: UICollectionViewCell {
+        guard let cell = self.dequeueReusableCell(
+            withReuseIdentifier: T.reuseIdentifier,
+            for: indexPath
+        ) as? T else { return nil }
+        return cell
+    }
 }
