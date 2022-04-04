@@ -8,11 +8,11 @@
 public extension UICollectionView {
     
     // MARK: - Methods
-    convenience init(direction: ScrollDirection) {
+    convenience init(direction: ScrollDirection, itemSpacing: CGFloat = 5) {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = direction
-        layout.minimumLineSpacing = 5
-        layout.minimumInteritemSpacing = 5
+        layout.minimumLineSpacing = itemSpacing
+        layout.minimumInteritemSpacing = itemSpacing
         layout.sectionInset = UIEdgeInsets.zero
         
         self.init(frame: .zero, collectionViewLayout: layout)
