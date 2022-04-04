@@ -25,6 +25,19 @@ public class BottomButton: UIButton {
         observeKeyboard()
     }
     
+    deinit {
+        NotificationCenter.default.removeObserver(
+            self,
+            name: UIResponder.keyboardWillShowNotification,
+            object: nil
+        )
+        NotificationCenter.default.removeObserver(
+            self,
+            name: UIResponder.keyboardWillHideNotification,
+            object: nil
+        )
+    }
+    
     @available(*, unavailable, message: "init?(coder:) is called.")
     public required init?(coder: NSCoder) {
         fatalError("init?(coder:) is called.")
