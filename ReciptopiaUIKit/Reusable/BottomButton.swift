@@ -45,7 +45,8 @@ public class BottomButton: UIButton {
         )
     }
     
-    @objc private func keyboardWillShow(_ notification: Notification) {
+    @objc
+    private func keyboardWillShow(_ notification: Notification) {
         if isKeyboardAppears { return }
         isKeyboardAppears = true
         
@@ -62,7 +63,8 @@ public class BottomButton: UIButton {
         }, completion: nil)
     }
     
-    @objc private func keyboardWillHide() {
+    @objc
+    private func keyboardWillHide() {
         isKeyboardAppears = false
         UIView.animate(withDuration: 0.2, delay: 0, options: UIView.AnimationOptions(), animations: {
             self.frame = CGRect(

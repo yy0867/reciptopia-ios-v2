@@ -92,12 +92,14 @@ public final class BackCameraView: BaseView {
         }
     }
     
-    @objc public func takePhoto() {
+    @objc
+    public func takePhoto() {
         let settings = AVCapturePhotoSettings(format: [AVVideoCodecKey: AVVideoCodecType.jpeg])
         stillImageOutput.capturePhoto(with: settings, delegate: delegate)
     }
     
-    @objc public func toggleFlash() {
+    @objc
+    public func toggleFlash() {
         if backCamera.hasTorch {
             do {
                 try backCamera.lockForConfiguration()
