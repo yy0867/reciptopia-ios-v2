@@ -10,10 +10,23 @@ import RxRelay
 import ReciptopiaUIKit
 import ReciptopiaKit
 
-public final class CheckIngredientViewModel {
+public protocol CheckIngredientViewModelInput {
+    func addIngredient(name: String)
+}
+
+public protocol CheckIngredientViewModelOutput {
+    var ingredients: BehaviorRelay<[Ingredient]> { get }
+}
+
+public protocol CheckIngredientViewModelProtocol:
+    CheckIngredientViewModelInput,
+    CheckIngredientViewModelOutput,
+    IngredientCollectionViewDelegate {}
+
+public final class CheckIngredientViewModel: CheckIngredientViewModelProtocol {
     
     // MARK: - Properties
-    let ingredients = BehaviorRelay<[Ingredient]>(value: [])
+    public let ingredients = BehaviorRelay<[Ingredient]>(value: [])
     
     // MARK: - Methods
     public init() {
@@ -26,7 +39,8 @@ public final class CheckIngredientViewModel {
     }
 }
 
-extension CheckIngredientViewModel: IngredientCollectionViewDelegate {
+// MARK: - IngredientCollectionViewDelagate
+extension CheckIngredientViewModel {
     public func getName(at index: Int) -> String {
         return ingredients.value[index].name
     }

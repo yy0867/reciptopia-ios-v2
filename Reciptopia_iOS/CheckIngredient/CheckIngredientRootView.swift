@@ -13,7 +13,7 @@ import RxCocoa
 final class CheckIngredientRootView: BaseView {
     
     // MARK: - Properties
-    let viewModel: CheckIngredientViewModel
+    let viewModel: CheckIngredientViewModelProtocol
     let disposeBag = DisposeBag()
     
     lazy var titleStack: UIStackView = {
@@ -94,7 +94,7 @@ final class CheckIngredientRootView: BaseView {
     }()
     
     // MARK: - Methods
-    init(frame: CGRect = .zero, viewModel: CheckIngredientViewModel) {
+    init(frame: CGRect = .zero, viewModel: CheckIngredientViewModelProtocol) {
         self.viewModel = viewModel
         super.init(frame: frame)
         bindViewModel()

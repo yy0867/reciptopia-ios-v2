@@ -10,10 +10,10 @@ import ReciptopiaUIKit
 public final class CheckIngredientViewController: BaseViewController {
     
     // MARK: - Properties
-    let viewModel: CheckIngredientViewModel
+    let viewModel: CheckIngredientViewModelProtocol
     
     // MARK: - Methods
-    public init(viewModel: CheckIngredientViewModel) {
+    public init(viewModel: CheckIngredientViewModelProtocol) {
         self.viewModel = viewModel
         super.init()
     }
