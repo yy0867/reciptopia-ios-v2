@@ -29,7 +29,7 @@ open class BaseView: UIView {
     open override func didMoveToWindow() {
         super.didMoveToWindow()
         if isAlreadyPresented { return }
-        backgroundColor = .white
+        backgroundColor = (backgroundColor == nil) ? .white : backgroundColor
         configureView()
         isAlreadyPresented = true
     }
