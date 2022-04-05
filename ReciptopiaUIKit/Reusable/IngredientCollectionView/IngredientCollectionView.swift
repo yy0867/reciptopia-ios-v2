@@ -12,9 +12,9 @@ public final class IngredientCollectionView: UICollectionView {
     private var cellSize = CGSize()
     
     // MARK: - Methods
-    public convenience init(direction: ScrollDirection, cellSize: CGSize) {
-        self.init(direction: direction, itemSpacing: 10)
-        self.cellSize = cellSize
+    public convenience init(direction: ScrollDirection, cellSize: CGSize? = nil) {
+        self.init(direction: direction, itemSpacing: 10, enablesAutomaticSize: cellSize == nil)
+        if let cellSize = cellSize { self.cellSize = cellSize }
         delegate = self
         dataSource = self
         register(IngredientCell.self)
@@ -23,7 +23,7 @@ public final class IngredientCollectionView: UICollectionView {
 }
 
 extension IngredientCollectionView: UICollectionViewDelegate {
-    
+
     public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let cell = collectionView.cellForItem(at: indexPath) as? IngredientCell else { return }
         cell.toggleState()
