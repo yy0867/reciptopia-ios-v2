@@ -12,7 +12,7 @@ public final class PictureIngredientNavigationController: BaseNavigationControll
     // MARK: - Properties
     
     // MARK: - Methods
-    public init(viewModel: PictureIngredientViewModel) {
+    init(viewModel: PictureIngredientViewModelProtocol) {
         let rootVC = PictureIngredientViewController(viewModel: viewModel)
         super.init(rootVC: rootVC)
     }

@@ -12,7 +12,7 @@ import RxRelay
 public final class PictureIngredientViewController: BaseViewController {
     
     // MARK: - Properties
-    let viewModel: PictureIngredientViewModel
+    let viewModel: PictureIngredientViewModelProtocol
     let disposeBag = DisposeBag()
     
     lazy var searchButton: UIButton = {
@@ -37,7 +37,7 @@ public final class PictureIngredientViewController: BaseViewController {
     }()
     
     // MARK: - Methods
-    public init(viewModel: PictureIngredientViewModel) {
+    init(viewModel: PictureIngredientViewModelProtocol) {
         self.viewModel = viewModel
         super.init()
         observeViewModel()

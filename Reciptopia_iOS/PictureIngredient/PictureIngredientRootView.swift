@@ -15,7 +15,7 @@ import AVFoundation
 final class PictureIngredientRootView: BaseView {
     
     // MARK: - Properties
-    let viewModel: PictureIngredientViewModel
+    let viewModel: PictureIngredientViewModelProtocol
     let disposeBag = DisposeBag()
     
     lazy var backCameraView: BackCameraView = {
@@ -96,7 +96,7 @@ final class PictureIngredientRootView: BaseView {
     }()
     
     // MARK: - Methods
-    init(frame: CGRect = .zero, viewModel: PictureIngredientViewModel) {
+    init(frame: CGRect = .zero, viewModel: PictureIngredientViewModelProtocol) {
         self.viewModel = viewModel
         super.init(frame: frame)
         bindViewModel()

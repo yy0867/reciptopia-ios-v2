@@ -11,8 +11,13 @@ import RxRelay
 
 protocol PictureIngredientViewModelInput {
     func addPicture(data: Data)
+    func removePicture(at index: Int)
+}
+
+protocol PictureIngredientViewModelAction {
     func analyzePictures()
     func managePictures()
+    func presentAlbum()
     func searchByName()
     func presentNotification()
 }
@@ -20,10 +25,12 @@ protocol PictureIngredientViewModelInput {
 protocol PictureIngredientViewModelOutput {
     var ingredientPictures: BehaviorRelay<[Data]> { get }
     var action: PublishRelay<PictureIngredientAction> { get }
+    var maxPictureCount: Int { get }
 }
 
 protocol PictureIngredientViewModelProtocol:
     PictureIngredientViewModelInput,
+    PictureIngredientViewModelAction,
     PictureIngredientViewModelOutput {}
 
 public final class PictureIngredientViewModel: PictureIngredientViewModelProtocol {
