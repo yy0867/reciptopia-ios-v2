@@ -26,7 +26,6 @@ final class ManagePictureRootView: BaseView {
     
     lazy var analyzeIngredientButton: BottomButton = {
         let button = BottomButton(title: "0개의 재료 분석하기")
-        
         return button
     }()
     
@@ -93,10 +92,9 @@ extension ManagePictureRootView: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(
-            withReuseIdentifier: ImageCell.reuseIdentifier,
-            for: indexPath
-        ) as? ImageCell else { return UICollectionViewCell() }
+        guard let cell = collectionView.dequeue(ImageCell.self, at: indexPath) else {
+            return UICollectionViewCell()
+        }
         
         let imageData = viewModel.ingredientPictures.value[indexPath.item]
         let image = UIImage(data: imageData)
