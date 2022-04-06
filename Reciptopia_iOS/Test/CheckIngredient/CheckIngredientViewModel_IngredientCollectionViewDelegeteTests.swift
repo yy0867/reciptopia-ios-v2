@@ -75,7 +75,7 @@ class CheckIngredientViewModel_IngredientCollectionViewDelegeteTests: XCTestCase
         ingredientNames.forEach { viewModel.addIngredient(name: $0) }
         
         // When
-        let index = Int.random(in: 0..<ingredientNames.count)
+        let index = Int.random(in: 1..<ingredientNames.count)
         let isMainIngredientAtIndex = viewModel.isMainIngredient(at: index)
         
         // Then
