@@ -24,9 +24,9 @@ final class SearchIngredientRootView: BaseView {
         return collectionView
     }()
     
-    lazy var searchIngredientContainerView: ContainerView = {
-        let containerView = ContainerView()
-        return containerView
+    lazy var searchIngredientContainerView: SearchIngredientContainerView = {
+        let view = SearchIngredientContainerView()
+        return view
     }()
     
     // MARK: - Methods
