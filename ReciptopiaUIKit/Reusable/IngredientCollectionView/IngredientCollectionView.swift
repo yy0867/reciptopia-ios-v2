@@ -13,17 +13,18 @@ public final class IngredientCollectionView: UICollectionView {
     
     // MARK: - Methods
     public convenience init(direction: ScrollDirection, cellSize: CGSize? = nil) {
-        self.init(direction: direction, itemSpacing: 10, enablesAutomaticSize: cellSize == nil)
-        if let cellSize = cellSize { self.cellSize = cellSize }
+        self.init(direction: direction, itemSpacing: 10)
+        self.cellSize = cellSize ?? .zero
         delegate = self
         dataSource = self
         register(IngredientCell.self)
         showsVerticalScrollIndicator = false
+        showsHorizontalScrollIndicator = false
     }
 }
 
 extension IngredientCollectionView: UICollectionViewDelegate {
-
+    
     public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let cell = collectionView.cellForItem(at: indexPath) as? IngredientCell else { return }
         cell.toggleState()
@@ -55,6 +56,19 @@ extension IngredientCollectionView: UICollectionViewDataSource {
 extension IngredientCollectionView: UICollectionViewDelegateFlowLayout {
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        if let flowLayout = collectionViewLayout as? UICollectionViewFlowLayout {
+            if flowLayout.scrollDirection == .horizontal {
+                let width = ingredientDelegate
+                    .getName(at: indexPath.item)
+                    .size(withAttributes: [
+                        NSAttributedString.Key.font: UIFont.systemFont(ofSize: 14)
+                    ])
+                    .width + 50
+                print(width)
+                return CGSize(width: width, height: 30)
+            }
+        }
         return cellSize
     }
 }
