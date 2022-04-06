@@ -7,21 +7,24 @@
 
 import Foundation
 import RxRelay
-import ReciptopiaUIKit
 import ReciptopiaKit
 
 public protocol CheckIngredientViewModelInput {
     func addIngredient(name: String)
+    func changeState(isMainIngredient state: Bool, at index: Int)
+    func remove(at index: Int)
 }
 
 public protocol CheckIngredientViewModelOutput {
     var ingredients: BehaviorRelay<[Ingredient]> { get }
+    func getName(at index: Int) -> String
+    func isMainIngredient(at index: Int) -> Bool
+    func getCount() -> Int
 }
 
 public protocol CheckIngredientViewModelProtocol:
     CheckIngredientViewModelInput,
-    CheckIngredientViewModelOutput,
-    IngredientCollectionViewDelegate {}
+    CheckIngredientViewModelOutput {}
 
 public final class CheckIngredientViewModel: CheckIngredientViewModelProtocol {
     
@@ -39,7 +42,7 @@ public final class CheckIngredientViewModel: CheckIngredientViewModelProtocol {
     }
 }
 
-// MARK: - IngredientCollectionViewDelagate
+// MARK: - IngredientCollectionView Delagate
 extension CheckIngredientViewModel {
     public func getName(at index: Int) -> String {
         return ingredients.value[index].name
@@ -57,9 +60,9 @@ extension CheckIngredientViewModel {
         ingredients.remove(at: index)
     }
     
-    public func changeState(to state: IngredientCell.State, at index: Int) {
+    public func changeState(isMainIngredient state: Bool, at index: Int) {
         var mutableIngredients = ingredients.value
-        mutableIngredients[index].isMainIngredient = (state == .mainIngredient)
+        mutableIngredients[index].isMainIngredient = state
         ingredients.accept(mutableIngredients)
     }
 }

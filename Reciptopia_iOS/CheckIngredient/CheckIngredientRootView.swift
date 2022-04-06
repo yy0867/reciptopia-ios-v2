@@ -84,7 +84,7 @@ final class CheckIngredientRootView: BaseView {
             direction: .vertical,
             cellSize: CGSize(width: UIScreen.main.bounds.width - 80, height: 45)
         )
-        collectionView.ingredientDelegate = viewModel
+        collectionView.ingredientDelegate = self
         return collectionView
     }()
     
@@ -160,6 +160,7 @@ extension CheckIngredientRootView {
     }
 }
 
+// MARK: - UITextField Delegate
 extension CheckIngredientRootView: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         guard let ingredientName = textField.text else { return false }
@@ -167,5 +168,20 @@ extension CheckIngredientRootView: UITextFieldDelegate {
         textField.text = ""
         textField.endEditing(true)
         return true
+    }
+}
+
+// MARK: - IngredientCollectionView Delegate
+extension CheckIngredientRootView: IngredientCollectionViewDelegate {
+    func getName(at index: Int) -> String { return viewModel.getName(at: index) }
+    
+    func isMainIngredient(at index: Int) -> Bool { return viewModel.isMainIngredient(at: index) }
+    
+    func getCount() -> Int { return viewModel.getCount() }
+    
+    func remove(at index: Int) { viewModel.remove(at: index) }
+    
+    func changeState(to state: IngredientCell.State, at index: Int) {
+        viewModel.changeState(isMainIngredient: state == .mainIngredient, at: index)
     }
 }
