@@ -7,18 +7,21 @@
 
 import XCTest
 import RxSwift
+import RxRelay
 @testable import Reciptopia_iOS
 @testable import ReciptopiaUIKit
 
 class CheckIngredientViewModel_IngredientCollectionViewDelegeteTests: XCTestCase {
     
-    var viewModel: CheckIngredientViewModel!
+    var viewModel: CheckIngredientViewModelProtocol!
     var delegate: IngredientCollectionViewDelegate!
+    var rootView: CheckIngredientRootView!
     let disposeBag = DisposeBag()
 
     override func setUp() {
         self.viewModel = CheckIngredientViewModel()
-        self.delegate = self.viewModel
+        self.rootView = CheckIngredientRootView(viewModel: viewModel)
+        self.delegate = self.rootView
     }
     
     func randomIngredientNames() -> [String] {
@@ -129,7 +132,7 @@ class CheckIngredientViewModel_IngredientCollectionViewDelegeteTests: XCTestCase
             .disposed(by: disposeBag)
         
         let index = Int.random(in: 0..<ingredientNames.count)
-        viewModel.changeState(to: .mainIngredient, at: index)
+        viewModel.changeState(isMainIngredient: true, at: index)
         
         // Then
         XCTAssertFalse(receivedIngredientStates.isEmpty)
