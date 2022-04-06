@@ -65,7 +65,6 @@ extension IngredientCollectionView: UICollectionViewDelegateFlowLayout {
                         NSAttributedString.Key.font: UIFont.systemFont(ofSize: 14)
                     ])
                     .width + 50
-                print(width)
                 return CGSize(width: width, height: 30)
             }
         }
