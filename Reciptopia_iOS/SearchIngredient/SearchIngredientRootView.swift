@@ -24,6 +24,11 @@ final class SearchIngredientRootView: BaseView {
         return collectionView
     }()
     
+    lazy var searchIngredientContainerView: ContainerView = {
+        let containerView = ContainerView()
+        return containerView
+    }()
+    
     // MARK: - Methods
     init(frame: CGRect = .zero, viewModel: SearchIngredientViewModelProtocol) {
         self.viewModel = viewModel
@@ -33,6 +38,7 @@ final class SearchIngredientRootView: BaseView {
     
     override func buildHierarchy() {
         addSubview(ingredientCollectionView)
+        addSubview(searchIngredientContainerView)
     }
 
     override func activateConstraints() {
@@ -40,6 +46,10 @@ final class SearchIngredientRootView: BaseView {
             make.top.equalTo(safeAreaLayoutGuide)
             make.leading.trailing.equalToSuperview()
             make.height.equalTo(50)
+        }
+        searchIngredientContainerView.snp.makeConstraints { make in
+            make.top.equalTo(ingredientCollectionView.snp.bottom)
+            make.leading.bottom.trailing.equalToSuperview()
         }
     }
 }
