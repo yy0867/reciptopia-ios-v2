@@ -17,7 +17,8 @@ final class HistoryAndFavoriteContainerView: ContainerView {
     }()
     
     lazy var favoritePostView: FavoritePostRootView = {
-        let view = FavoritePostRootView()
+        let viewModel = FavoritePostViewModel()
+        let view = FavoritePostRootView(viewModel: viewModel)
         return view
     }()
     

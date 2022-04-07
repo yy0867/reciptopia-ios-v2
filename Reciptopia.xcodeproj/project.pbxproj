@@ -19,6 +19,7 @@
 		A50317B627FD7BCC00AE7867 /* UITableViewCell+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50317B527FD7BCC00AE7867 /* UITableViewCell+.swift */; };
 		A516027D27FEA8030061170A /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A516027C27FEA8030061170A /* DIContainer.swift */; };
 		A51F766D27FEBEB900B7A29A /* FloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51F766C27FEBEB900B7A29A /* FloatingButton.swift */; };
+		A51F766F27FEDAF400B7A29A /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51F766E27FEDAF400B7A29A /* Favorite.swift */; };
 		A536FED427F54C3000B3D947 /* PictureIngredientNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A536FED327F54C3000B3D947 /* PictureIngredientNavigationController.swift */; };
 		A536FED627F54C8400B3D947 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A536FED527F54C8400B3D947 /* BaseNavigationController.swift */; };
 		A541589927F3280900C851A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541589827F3280900C851A2 /* AppDelegate.swift */; };
@@ -268,6 +269,7 @@
 		A50317B527FD7BCC00AE7867 /* UITableViewCell+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+.swift"; sourceTree = "<group>"; };
 		A516027C27FEA8030061170A /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		A51F766C27FEBEB900B7A29A /* FloatingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButton.swift; sourceTree = "<group>"; };
+		A51F766E27FEDAF400B7A29A /* Favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
 		A536FED327F54C3000B3D947 /* PictureIngredientNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureIngredientNavigationController.swift; sourceTree = "<group>"; };
 		A536FED527F54C8400B3D947 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		A541589527F3280900C851A2 /* Reciptopia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reciptopia.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -725,6 +727,7 @@
 			children = (
 				A566D6F327F6F2A9000D2B46 /* Ingredient.swift */,
 				A50317AF27FD764500AE7867 /* History.swift */,
+				A51F766E27FEDAF400B7A29A /* Favorite.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1595,6 +1598,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A51F766F27FEDAF400B7A29A /* Favorite.swift in Sources */,
 				A50317B027FD764500AE7867 /* History.swift in Sources */,
 				A566D6F427F6F2A9000D2B46 /* Ingredient.swift in Sources */,
 			);
