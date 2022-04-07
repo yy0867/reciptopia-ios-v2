@@ -147,6 +147,15 @@ final class PictureIngredientRootView: BaseView {
         )
     }
     
+    func stopCameraRunning() {
+        backCameraView.stopRunning()
+    }
+    
+    func startCameraRunning() {
+        backCameraView.startRunning()
+    }
+    
+    // MARK: - @objc methods
     @objc
     func takePhoto() {
         #if targetEnvironment(simulator)
