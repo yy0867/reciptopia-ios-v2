@@ -58,4 +58,12 @@ class PictureIngredientViewControllerTests: XCTestCase {
         // Then
         XCTAssertEqual(UIImage(systemName: "bell.fill"), image)
     }
+    
+    func test_PictureIngredientViewController_observeViewModel_shouldReceiveCorrectAction() {
+        // Given
+        
+        // When
+        
+        // Then
+    }
 }
