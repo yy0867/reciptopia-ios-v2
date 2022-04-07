@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F5A1FD38D663839D56F8EB0 /* Pods_Reciptopia_ReciptopiaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C6B85DCD40E8D8C3246609 /* Pods_Reciptopia_ReciptopiaUITests.framework */; };
+		72A25F95C2D391E2262F1736 /* Pods_ReciptopiaUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F7E02817633E2187EA8D706 /* Pods_ReciptopiaUIKit.framework */; };
+		8124113F95F74652195B3DE0 /* Pods_Reciptopia_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 269C9F305E914C96D2BB8071 /* Pods_Reciptopia_iOS.framework */; };
+		828DE01069F4A2DC9E49BE44 /* Pods_ReciptopiaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 238F7A5C96958EA265E38357 /* Pods_ReciptopiaKit.framework */; };
+		844519FF7DA60F8F3A325BBC /* Pods_ReciptopiaUIKit_ReciptopiaUIKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF47A66D9989AB8BE9159C1A /* Pods_ReciptopiaUIKit_ReciptopiaUIKitTests.framework */; };
+		A50317AC27FD734D00AE7867 /* SearchHistoryRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50317AB27FD734D00AE7867 /* SearchHistoryRootView.swift */; };
+		A50317AE27FD736C00AE7867 /* FavoritePostRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50317AD27FD736C00AE7867 /* FavoritePostRootView.swift */; };
+		A50317B027FD764500AE7867 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50317AF27FD764500AE7867 /* History.swift */; };
+		A50317B427FD7BC400AE7867 /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50317B327FD7BC400AE7867 /* UITableView+.swift */; };
+		A50317B627FD7BCC00AE7867 /* UITableViewCell+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50317B527FD7BCC00AE7867 /* UITableViewCell+.swift */; };
+		A516027D27FEA8030061170A /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A516027C27FEA8030061170A /* DIContainer.swift */; };
+		A51F766D27FEBEB900B7A29A /* FloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51F766C27FEBEB900B7A29A /* FloatingButton.swift */; };
 		A536FED427F54C3000B3D947 /* PictureIngredientNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A536FED327F54C3000B3D947 /* PictureIngredientNavigationController.swift */; };
 		A536FED627F54C8400B3D947 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A536FED527F54C8400B3D947 /* BaseNavigationController.swift */; };
 		A541589927F3280900C851A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541589827F3280900C851A2 /* AppDelegate.swift */; };
@@ -29,14 +41,9 @@
 		A541591627F334F200C851A2 /* BackCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541591527F334F200C851A2 /* BackCameraView.swift */; };
 		A541591827F348A700C851A2 /* PictureIngredientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541591727F348A700C851A2 /* PictureIngredientViewController.swift */; };
 		A541591A27F348EB00C851A2 /* PictureIngredientRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541591927F348EB00C851A2 /* PictureIngredientRootView.swift */; };
-		A541591D27F3490F00C851A2 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A541591C27F3490F00C851A2 /* SnapKit */; };
-		A541592727F34A2E00C851A2 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = A541592627F34A2E00C851A2 /* RxCocoa */; };
-		A541592927F34A2E00C851A2 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = A541592827F34A2E00C851A2 /* RxRelay */; };
-		A541592B27F34A2E00C851A2 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A541592A27F34A2E00C851A2 /* RxSwift */; };
 		A541592D27F34ADA00C851A2 /* PictureIngredientViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541592C27F34ADA00C851A2 /* PictureIngredientViewModel.swift */; };
 		A541593127F34CEB00C851A2 /* BehaviorRelay+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541593027F34CEB00C851A2 /* BehaviorRelay+.swift */; };
 		A541593527F34E0800C851A2 /* BehaviorRelayExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541593327F34DF500C851A2 /* BehaviorRelayExtensionTests.swift */; };
-		A541593727F34F4400C851A2 /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = A541593627F34F4400C851A2 /* RxTest */; };
 		A541593B27F3578100C851A2 /* XCTestCase+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541593927F3513B00C851A2 /* XCTestCase+.swift */; };
 		A541593E27F35B6F00C851A2 /* PictureIngredientAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541593D27F35B6F00C851A2 /* PictureIngredientAction.swift */; };
 		A541594027F35D4800C851A2 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541593F27F35D4800C851A2 /* UIButton+.swift */; };
@@ -50,8 +57,54 @@
 		A541595327F36B1800C851A2 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541594E27F36AEF00C851A2 /* Log.swift */; };
 		A541595427F36B1900C851A2 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541594E27F36AEF00C851A2 /* Log.swift */; };
 		A541595527F36B1A00C851A2 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = A541594E27F36AEF00C851A2 /* Log.swift */; };
+		A566D6CD27F6EBE5000D2B46 /* IngredientCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566D6CC27F6EBE5000D2B46 /* IngredientCollectionView.swift */; };
+		A566D6CF27F6EC09000D2B46 /* IngredientCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566D6CE27F6EC09000D2B46 /* IngredientCollectionViewDelegate.swift */; };
+		A566D6D127F6EDCA000D2B46 /* IngredientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566D6D027F6EDCA000D2B46 /* IngredientCell.swift */; };
+		A566D6DF27F6F270000D2B46 /* ReciptopiaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A566D6D727F6F270000D2B46 /* ReciptopiaKit.framework */; };
+		A566D6E627F6F270000D2B46 /* ReciptopiaKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566D6E527F6F270000D2B46 /* ReciptopiaKitTests.swift */; };
+		A566D6E727F6F270000D2B46 /* ReciptopiaKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A566D6D927F6F270000D2B46 /* ReciptopiaKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A566D6EA27F6F270000D2B46 /* ReciptopiaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A566D6D727F6F270000D2B46 /* ReciptopiaKit.framework */; };
+		A566D6EB27F6F270000D2B46 /* ReciptopiaKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A566D6D727F6F270000D2B46 /* ReciptopiaKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A566D6F427F6F2A9000D2B46 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566D6F327F6F2A9000D2B46 /* Ingredient.swift */; };
+		A566D6FA27F71C29000D2B46 /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566D6F927F71C29000D2B46 /* UITextField+.swift */; };
+		A566D6FC27F725AD000D2B46 /* CapsuleField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566D6FB27F725AD000D2B46 /* CapsuleField.swift */; };
+		A570E2BF27F6ABE400F734C0 /* CheckIngredientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A570E2BE27F6ABE400F734C0 /* CheckIngredientViewController.swift */; };
+		A570E2C127F6AC2000F734C0 /* CheckIngredientViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A570E2C027F6AC2000F734C0 /* CheckIngredientViewModel.swift */; };
+		A570E2C527F6B4BF00F734C0 /* CheckIngredientRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A570E2C427F6B4BF00F734C0 /* CheckIngredientRootView.swift */; };
 		A58D833A27F5503E0093CD72 /* PictureIngredientViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58D833827F550360093CD72 /* PictureIngredientViewControllerTests.swift */; };
+		A58D833F27F55C220093CD72 /* ManagePictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58D833E27F55C220093CD72 /* ManagePictureViewController.swift */; };
+		A58D834127F5732D0093CD72 /* ManagePictureRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58D834027F5732D0093CD72 /* ManagePictureRootView.swift */; };
+		A58D834427F573C70093CD72 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58D834327F573C70093CD72 /* ImageCell.swift */; };
+		A58D834827F57B680093CD72 /* UICollectionView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58D834727F57B680093CD72 /* UICollectionView+.swift */; };
+		A599D5ED27FA968A00F99032 /* CheckIngredientViewModel_IngredientCollectionViewDelegeteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A599D5EC27FA968A00F99032 /* CheckIngredientViewModel_IngredientCollectionViewDelegeteTests.swift */; };
+		A5B8674227FDC4AB00E0CE96 /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B8674127FDC4AB00E0CE96 /* UIImage+.swift */; };
+		A5BDB36E27FD5A8C00FAEC18 /* SearchIngredientViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDB36D27FD5A8C00FAEC18 /* SearchIngredientViewControllerTests.swift */; };
+		A5BDB37027FD5EE300FAEC18 /* SearchIngredientRootViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDB36F27FD5EE300FAEC18 /* SearchIngredientRootViewTests.swift */; };
+		A5BDB37227FD6E2A00FAEC18 /* SearchIngredientContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDB37127FD6E2A00FAEC18 /* SearchIngredientContainerView.swift */; };
+		A5BDB37427FD6FB100FAEC18 /* PageSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDB37327FD6FB100FAEC18 /* PageSegmentedControl.swift */; };
+		A5BDB37627FD70FE00FAEC18 /* PostSearchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDB37527FD70FE00FAEC18 /* PostSearchListView.swift */; };
+		A5BFC22F27FBE0090030776C /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFC22E27FBE0090030776C /* ContainerView.swift */; };
+		A5BFC23427FC0FDE0030776C /* SearchIngredientRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFC23327FC0FDE0030776C /* SearchIngredientRootView.swift */; };
+		A5BFC23627FC0FFE0030776C /* SearchIngredientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFC23527FC0FFE0030776C /* SearchIngredientViewController.swift */; };
+		A5BFC23827FC109E0030776C /* SearchIngredientViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFC23727FC109E0030776C /* SearchIngredientViewModel.swift */; };
+		A5BFC23A27FC15490030776C /* SearchIngredientNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFC23927FC15490030776C /* SearchIngredientNavigationController.swift */; };
+		A5BFC23E27FC19F40030776C /* HistoryAndFavoriteRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFC23D27FC19F40030776C /* HistoryAndFavoriteRootView.swift */; };
+		A5BFC24027FC1D1B0030776C /* FavoritePostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFC23F27FC1D1B0030776C /* FavoritePostViewModel.swift */; };
+		A5BFC24427FC1FDE0030776C /* SearchHistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFC24327FC1FDE0030776C /* SearchHistoryViewModel.swift */; };
+		A5C4B5DA27FD86BA002C3510 /* HistoryAndFavoriteContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4B5D927FD86BA002C3510 /* HistoryAndFavoriteContainerView.swift */; };
 		A5E0577527F41AC200646852 /* PictureIngredientRootViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E0577427F41AC200646852 /* PictureIngredientRootViewTests.swift */; };
+		A5E81F2427F5D4F30042F01E /* BottomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E81F2327F5D4F30042F01E /* BottomButton.swift */; };
+		A5E81F2627F5DD9D0042F01E /* ManagePictureRootViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E81F2527F5DD9D0042F01E /* ManagePictureRootViewTests.swift */; };
+		A5E81F2827F5E4A70042F01E /* UICollectionViewCell+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E81F2727F5E4A70042F01E /* UICollectionViewCell+.swift */; };
+		A5EF052727FDE617006B1C66 /* ReciptopiaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A566D6D727F6F270000D2B46 /* ReciptopiaKit.framework */; };
+		A5EF052827FDE617006B1C66 /* ReciptopiaKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A566D6D727F6F270000D2B46 /* ReciptopiaKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A5EF052B27FDE617006B1C66 /* ReciptopiaUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A54158F127F3293C00C851A2 /* ReciptopiaUIKit.framework */; };
+		A5EF052C27FDE617006B1C66 /* ReciptopiaUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A54158F127F3293C00C851A2 /* ReciptopiaUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A5F9734E27F9E6A5000DDDD5 /* CheckIngredientRootViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F9734D27F9E6A5000DDDD5 /* CheckIngredientRootViewTests.swift */; };
+		B4F3E5AF3C6010866E04B9CF /* Pods_ReciptopiaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33C83DEA8D405438CC5E78AF /* Pods_ReciptopiaTests.framework */; };
+		BEA19C6845CFB3D7F484D19B /* Pods_Reciptopia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29366EBFAEE1E6E1D8BAE5D6 /* Pods_Reciptopia.framework */; };
+		EF64F5052769F6247B25B560 /* Pods_Reciptopia_iOS_Reciptopia_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E720ADA649BC4529A7931D4F /* Pods_Reciptopia_iOS_Reciptopia_iOSTests.framework */; };
+		F339DE066FA02ECE98946B27 /* Pods_ReciptopiaKit_ReciptopiaKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 699CC008992F56A79E19EFD7 /* Pods_ReciptopiaKit_ReciptopiaKitTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +164,41 @@
 			remoteGlobalIDString = A54158F027F3293C00C851A2;
 			remoteInfo = ReciptopiaUIKit;
 		};
+		A566D6E027F6F270000D2B46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A541588D27F3280900C851A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A566D6D627F6F270000D2B46;
+			remoteInfo = ReciptopiaKit;
+		};
+		A566D6E227F6F270000D2B46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A541588D27F3280900C851A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A541589427F3280900C851A2;
+			remoteInfo = Reciptopia;
+		};
+		A566D6E827F6F270000D2B46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A541588D27F3280900C851A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A566D6D627F6F270000D2B46;
+			remoteInfo = ReciptopiaKit;
+		};
+		A5EF052927FDE617006B1C66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A541588D27F3280900C851A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A566D6D627F6F270000D2B46;
+			remoteInfo = ReciptopiaKit;
+		};
+		A5EF052D27FDE617006B1C66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A541588D27F3280900C851A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A54158F027F3293C00C851A2;
+			remoteInfo = ReciptopiaUIKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -122,6 +210,29 @@
 			files = (
 				A54158E227F328AB00C851A2 /* Reciptopia_iOS.framework in Embed Frameworks */,
 				A541590527F3293C00C851A2 /* ReciptopiaUIKit.framework in Embed Frameworks */,
+				A566D6EB27F6F270000D2B46 /* ReciptopiaKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5EF04EE27FDE1B6006B1C66 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A5EF052827FDE617006B1C66 /* ReciptopiaKit.framework in Embed Frameworks */,
+				A5EF052C27FDE617006B1C66 /* ReciptopiaUIKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5EF04FE27FDE21C006B1C66 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -129,6 +240,34 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		014A51B910DFBE7E08B11B12 /* Pods-ReciptopiaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReciptopiaTests.release.xcconfig"; path = "Target Support Files/Pods-ReciptopiaTests/Pods-ReciptopiaTests.release.xcconfig"; sourceTree = "<group>"; };
+		133EEB7B897869361A45D5BC /* Pods-ReciptopiaKit-ReciptopiaKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReciptopiaKit-ReciptopiaKitTests.release.xcconfig"; path = "Target Support Files/Pods-ReciptopiaKit-ReciptopiaKitTests/Pods-ReciptopiaKit-ReciptopiaKitTests.release.xcconfig"; sourceTree = "<group>"; };
+		13C6B85DCD40E8D8C3246609 /* Pods_Reciptopia_ReciptopiaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reciptopia_ReciptopiaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CA3A1E230CAF2284ADB3B88 /* Pods-Reciptopia-ReciptopiaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reciptopia-ReciptopiaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Reciptopia-ReciptopiaUITests/Pods-Reciptopia-ReciptopiaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		238F7A5C96958EA265E38357 /* Pods_ReciptopiaKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReciptopiaKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		269C9F305E914C96D2BB8071 /* Pods_Reciptopia_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reciptopia_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29366EBFAEE1E6E1D8BAE5D6 /* Pods_Reciptopia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reciptopia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DBD5C339D5C7DAAAA64763C /* Pods-ReciptopiaKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReciptopiaKit.release.xcconfig"; path = "Target Support Files/Pods-ReciptopiaKit/Pods-ReciptopiaKit.release.xcconfig"; sourceTree = "<group>"; };
+		30C4D08689A0488197D4A730 /* Pods-ReciptopiaUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReciptopiaUIKit.release.xcconfig"; path = "Target Support Files/Pods-ReciptopiaUIKit/Pods-ReciptopiaUIKit.release.xcconfig"; sourceTree = "<group>"; };
+		33C83DEA8D405438CC5E78AF /* Pods_ReciptopiaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReciptopiaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3472D2FE5CB72786947613FB /* Pods-Reciptopia_iOS-Reciptopia_iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reciptopia_iOS-Reciptopia_iOSTests.release.xcconfig"; path = "Target Support Files/Pods-Reciptopia_iOS-Reciptopia_iOSTests/Pods-Reciptopia_iOS-Reciptopia_iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		35E2D52186492430BCB43A60 /* Pods-ReciptopiaUIKit-ReciptopiaUIKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReciptopiaUIKit-ReciptopiaUIKitTests.debug.xcconfig"; path = "Target Support Files/Pods-ReciptopiaUIKit-ReciptopiaUIKitTests/Pods-ReciptopiaUIKit-ReciptopiaUIKitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		414728A1F883E5A6EAA8B941 /* Pods-Reciptopia_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reciptopia_iOS.release.xcconfig"; path = "Target Support Files/Pods-Reciptopia_iOS/Pods-Reciptopia_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		510D67B517E88FD33A1EE36F /* Pods-Reciptopia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reciptopia.debug.xcconfig"; path = "Target Support Files/Pods-Reciptopia/Pods-Reciptopia.debug.xcconfig"; sourceTree = "<group>"; };
+		528A08BAD986E3995138C015 /* Pods-ReciptopiaKit-ReciptopiaKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReciptopiaKit-ReciptopiaKitTests.debug.xcconfig"; path = "Target Support Files/Pods-ReciptopiaKit-ReciptopiaKitTests/Pods-ReciptopiaKit-ReciptopiaKitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		628BE557D9AD67E749FAFF21 /* Pods-Reciptopia_iOS-Reciptopia_iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reciptopia_iOS-Reciptopia_iOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Reciptopia_iOS-Reciptopia_iOSTests/Pods-Reciptopia_iOS-Reciptopia_iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6319A0FAFD02E9D53D4978B2 /* Pods-Reciptopia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reciptopia.release.xcconfig"; path = "Target Support Files/Pods-Reciptopia/Pods-Reciptopia.release.xcconfig"; sourceTree = "<group>"; };
+		699CC008992F56A79E19EFD7 /* Pods_ReciptopiaKit_ReciptopiaKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReciptopiaKit_ReciptopiaKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79357960D38732ECF368E154 /* Pods-Reciptopia-ReciptopiaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reciptopia-ReciptopiaUITests.release.xcconfig"; path = "Target Support Files/Pods-Reciptopia-ReciptopiaUITests/Pods-Reciptopia-ReciptopiaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7F7E02817633E2187EA8D706 /* Pods_ReciptopiaUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReciptopiaUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		955EF1FA9C7AE1B236F562C8 /* Pods-ReciptopiaUIKit-ReciptopiaUIKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReciptopiaUIKit-ReciptopiaUIKitTests.release.xcconfig"; path = "Target Support Files/Pods-ReciptopiaUIKit-ReciptopiaUIKitTests/Pods-ReciptopiaUIKit-ReciptopiaUIKitTests.release.xcconfig"; sourceTree = "<group>"; };
+		A50317AB27FD734D00AE7867 /* SearchHistoryRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryRootView.swift; sourceTree = "<group>"; };
+		A50317AD27FD736C00AE7867 /* FavoritePostRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePostRootView.swift; sourceTree = "<group>"; };
+		A50317AF27FD764500AE7867 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		A50317B327FD7BC400AE7867 /* UITableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
+		A50317B527FD7BCC00AE7867 /* UITableViewCell+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+.swift"; sourceTree = "<group>"; };
+		A516027C27FEA8030061170A /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		A51F766C27FEBEB900B7A29A /* FloatingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButton.swift; sourceTree = "<group>"; };
 		A536FED327F54C3000B3D947 /* PictureIngredientNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureIngredientNavigationController.swift; sourceTree = "<group>"; };
 		A536FED527F54C8400B3D947 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		A541589527F3280900C851A2 /* Reciptopia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reciptopia.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,8 +302,51 @@
 		A541594427F35FDE00C851A2 /* UIButtonExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtensionTests.swift; sourceTree = "<group>"; };
 		A541594B27F36A5100C851A2 /* PictureIngredientViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureIngredientViewModelTests.swift; sourceTree = "<group>"; };
 		A541594E27F36AEF00C851A2 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		A566D6CC27F6EBE5000D2B46 /* IngredientCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientCollectionView.swift; sourceTree = "<group>"; };
+		A566D6CE27F6EC09000D2B46 /* IngredientCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientCollectionViewDelegate.swift; sourceTree = "<group>"; };
+		A566D6D027F6EDCA000D2B46 /* IngredientCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientCell.swift; sourceTree = "<group>"; };
+		A566D6D727F6F270000D2B46 /* ReciptopiaKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReciptopiaKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A566D6D927F6F270000D2B46 /* ReciptopiaKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReciptopiaKit.h; sourceTree = "<group>"; };
+		A566D6DE27F6F270000D2B46 /* ReciptopiaKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReciptopiaKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A566D6E527F6F270000D2B46 /* ReciptopiaKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReciptopiaKitTests.swift; sourceTree = "<group>"; };
+		A566D6F327F6F2A9000D2B46 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		A566D6F927F71C29000D2B46 /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
+		A566D6FB27F725AD000D2B46 /* CapsuleField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleField.swift; sourceTree = "<group>"; };
+		A570E2BE27F6ABE400F734C0 /* CheckIngredientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckIngredientViewController.swift; sourceTree = "<group>"; };
+		A570E2C027F6AC2000F734C0 /* CheckIngredientViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckIngredientViewModel.swift; sourceTree = "<group>"; };
+		A570E2C427F6B4BF00F734C0 /* CheckIngredientRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckIngredientRootView.swift; sourceTree = "<group>"; };
 		A58D833827F550360093CD72 /* PictureIngredientViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureIngredientViewControllerTests.swift; sourceTree = "<group>"; };
+		A58D833E27F55C220093CD72 /* ManagePictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagePictureViewController.swift; sourceTree = "<group>"; };
+		A58D834027F5732D0093CD72 /* ManagePictureRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagePictureRootView.swift; sourceTree = "<group>"; };
+		A58D834327F573C70093CD72 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		A58D834727F57B680093CD72 /* UICollectionView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+.swift"; sourceTree = "<group>"; };
+		A599D5EC27FA968A00F99032 /* CheckIngredientViewModel_IngredientCollectionViewDelegeteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckIngredientViewModel_IngredientCollectionViewDelegeteTests.swift; sourceTree = "<group>"; };
+		A5B8674127FDC4AB00E0CE96 /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
+		A5BDB36D27FD5A8C00FAEC18 /* SearchIngredientViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchIngredientViewControllerTests.swift; sourceTree = "<group>"; };
+		A5BDB36F27FD5EE300FAEC18 /* SearchIngredientRootViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchIngredientRootViewTests.swift; sourceTree = "<group>"; };
+		A5BDB37127FD6E2A00FAEC18 /* SearchIngredientContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchIngredientContainerView.swift; sourceTree = "<group>"; };
+		A5BDB37327FD6FB100FAEC18 /* PageSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageSegmentedControl.swift; sourceTree = "<group>"; };
+		A5BDB37527FD70FE00FAEC18 /* PostSearchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostSearchListView.swift; sourceTree = "<group>"; };
+		A5BFC22E27FBE0090030776C /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+		A5BFC23327FC0FDE0030776C /* SearchIngredientRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchIngredientRootView.swift; sourceTree = "<group>"; };
+		A5BFC23527FC0FFE0030776C /* SearchIngredientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchIngredientViewController.swift; sourceTree = "<group>"; };
+		A5BFC23727FC109E0030776C /* SearchIngredientViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchIngredientViewModel.swift; sourceTree = "<group>"; };
+		A5BFC23927FC15490030776C /* SearchIngredientNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchIngredientNavigationController.swift; sourceTree = "<group>"; };
+		A5BFC23D27FC19F40030776C /* HistoryAndFavoriteRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryAndFavoriteRootView.swift; sourceTree = "<group>"; };
+		A5BFC23F27FC1D1B0030776C /* FavoritePostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePostViewModel.swift; sourceTree = "<group>"; };
+		A5BFC24327FC1FDE0030776C /* SearchHistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryViewModel.swift; sourceTree = "<group>"; };
+		A5C4B5D927FD86BA002C3510 /* HistoryAndFavoriteContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryAndFavoriteContainerView.swift; sourceTree = "<group>"; };
 		A5E0577427F41AC200646852 /* PictureIngredientRootViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureIngredientRootViewTests.swift; sourceTree = "<group>"; };
+		A5E81F2327F5D4F30042F01E /* BottomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomButton.swift; sourceTree = "<group>"; };
+		A5E81F2527F5DD9D0042F01E /* ManagePictureRootViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagePictureRootViewTests.swift; sourceTree = "<group>"; };
+		A5E81F2727F5E4A70042F01E /* UICollectionViewCell+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+.swift"; sourceTree = "<group>"; };
+		A5F9734D27F9E6A5000DDDD5 /* CheckIngredientRootViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckIngredientRootViewTests.swift; sourceTree = "<group>"; };
+		A6411103935FE51AB72F649A /* Pods-ReciptopiaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReciptopiaTests.debug.xcconfig"; path = "Target Support Files/Pods-ReciptopiaTests/Pods-ReciptopiaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AF47A66D9989AB8BE9159C1A /* Pods_ReciptopiaUIKit_ReciptopiaUIKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReciptopiaUIKit_ReciptopiaUIKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0451DDA65C1D313A04893E7 /* Pods-ReciptopiaUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReciptopiaUIKit.debug.xcconfig"; path = "Target Support Files/Pods-ReciptopiaUIKit/Pods-ReciptopiaUIKit.debug.xcconfig"; sourceTree = "<group>"; };
+		D828C98309D6F0B031C961D0 /* Pods-Reciptopia_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reciptopia_iOS.debug.xcconfig"; path = "Target Support Files/Pods-Reciptopia_iOS/Pods-Reciptopia_iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		E720ADA649BC4529A7931D4F /* Pods_Reciptopia_iOS_Reciptopia_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reciptopia_iOS_Reciptopia_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB875203737DF8BA28808A64 /* Pods-ReciptopiaKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReciptopiaKit.debug.xcconfig"; path = "Target Support Files/Pods-ReciptopiaKit/Pods-ReciptopiaKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +356,8 @@
 			files = (
 				A54158E127F328AB00C851A2 /* Reciptopia_iOS.framework in Frameworks */,
 				A541590427F3293C00C851A2 /* ReciptopiaUIKit.framework in Frameworks */,
+				A566D6EA27F6F270000D2B46 /* ReciptopiaKit.framework in Frameworks */,
+				BEA19C6845CFB3D7F484D19B /* Pods_Reciptopia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +365,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4F3E5AF3C6010866E04B9CF /* Pods_ReciptopiaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +373,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F5A1FD38D663839D56F8EB0 /* Pods_Reciptopia_ReciptopiaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,10 +381,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A541592927F34A2E00C851A2 /* RxRelay in Frameworks */,
-				A541592727F34A2E00C851A2 /* RxCocoa in Frameworks */,
-				A541592B27F34A2E00C851A2 /* RxSwift in Frameworks */,
-				A541591D27F3490F00C851A2 /* SnapKit in Frameworks */,
+				A5EF052727FDE617006B1C66 /* ReciptopiaKit.framework in Frameworks */,
+				A5EF052B27FDE617006B1C66 /* ReciptopiaUIKit.framework in Frameworks */,
+				8124113F95F74652195B3DE0 /* Pods_Reciptopia_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,8 +391,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A541593727F34F4400C851A2 /* RxTest in Frameworks */,
 				A54158D627F328AB00C851A2 /* Reciptopia_iOS.framework in Frameworks */,
+				EF64F5052769F6247B25B560 /* Pods_Reciptopia_iOS_Reciptopia_iOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +400,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72A25F95C2D391E2262F1736 /* Pods_ReciptopiaUIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,20 +409,54 @@
 			buildActionMask = 2147483647;
 			files = (
 				A54158F927F3293C00C851A2 /* ReciptopiaUIKit.framework in Frameworks */,
+				844519FF7DA60F8F3A325BBC /* Pods_ReciptopiaUIKit_ReciptopiaUIKitTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A566D6D427F6F270000D2B46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				828DE01069F4A2DC9E49BE44 /* Pods_ReciptopiaKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A566D6DB27F6F270000D2B46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A566D6DF27F6F270000D2B46 /* ReciptopiaKit.framework in Frameworks */,
+				F339DE066FA02ECE98946B27 /* Pods_ReciptopiaKit_ReciptopiaKitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A516027A27FEA1890061170A /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataStore;
+			sourceTree = "<group>";
+		};
+		A516027B27FEA1900061170A /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 		A541588C27F3280900C851A2 = {
 			isa = PBXGroup;
 			children = (
 				A541589727F3280900C851A2 /* Reciptopia */,
 				A54158CF27F328AB00C851A2 /* Reciptopia_iOS */,
 				A54158F227F3293C00C851A2 /* ReciptopiaUIKit */,
+				A566D6D827F6F270000D2B46 /* ReciptopiaKit */,
 				A541589627F3280900C851A2 /* Products */,
 				A541592527F34A2E00C851A2 /* Frameworks */,
+				A5F83098711031EF251760FA /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -250,6 +470,8 @@
 				A54158D527F328AB00C851A2 /* Reciptopia_iOSTests.xctest */,
 				A54158F127F3293C00C851A2 /* ReciptopiaUIKit.framework */,
 				A54158F827F3293C00C851A2 /* ReciptopiaUIKitTests.xctest */,
+				A566D6D727F6F270000D2B46 /* ReciptopiaKit.framework */,
+				A566D6DE27F6F270000D2B46 /* ReciptopiaKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -299,7 +521,10 @@
 				A54158D027F328AB00C851A2 /* Reciptopia_iOS.h */,
 				A541592F27F34CD700C851A2 /* Extension */,
 				A54158EB27F3290400C851A2 /* PictureIngredient */,
+				A570E2BD27F6ABAA00F734C0 /* CheckIngredient */,
+				A5BFC23227FC0F9B0030776C /* SearchIngredient */,
 				A54158DB27F328AB00C851A2 /* Test */,
+				A516027C27FEA8030061170A /* DIContainer.swift */,
 			);
 			path = Reciptopia_iOS;
 			sourceTree = "<group>";
@@ -308,6 +533,9 @@
 			isa = PBXGroup;
 			children = (
 				A541594A27F36A2A00C851A2 /* PictureIngredient */,
+				A58D834927F582630093CD72 /* ManagePicture */,
+				A5F9734C27F9E688000DDDD5 /* CheckIngredient */,
+				A5BDB36C27FD5A7000FAEC18 /* SearchIngredient */,
 				A541593227F34DE400C851A2 /* ExtensionTests */,
 			);
 			path = Test;
@@ -350,7 +578,14 @@
 		A541590C27F3295700C851A2 /* Reusable */ = {
 			isa = PBXGroup;
 			children = (
+				A5BFC22D27FBDFF50030776C /* ContainerView */,
+				A566D6CB27F6EBB8000D2B46 /* IngredientCollectionView */,
+				A58D834227F573BF0093CD72 /* Cell */,
 				A541591527F334F200C851A2 /* BackCameraView.swift */,
+				A5E81F2327F5D4F30042F01E /* BottomButton.swift */,
+				A566D6FB27F725AD000D2B46 /* CapsuleField.swift */,
+				A5BDB37327FD6FB100FAEC18 /* PageSegmentedControl.swift */,
+				A51F766C27FEBEB900B7A29A /* FloatingButton.swift */,
 			);
 			path = Reusable;
 			sourceTree = "<group>";
@@ -368,6 +603,15 @@
 		A541592527F34A2E00C851A2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				29366EBFAEE1E6E1D8BAE5D6 /* Pods_Reciptopia.framework */,
+				13C6B85DCD40E8D8C3246609 /* Pods_Reciptopia_ReciptopiaUITests.framework */,
+				238F7A5C96958EA265E38357 /* Pods_ReciptopiaKit.framework */,
+				699CC008992F56A79E19EFD7 /* Pods_ReciptopiaKit_ReciptopiaKitTests.framework */,
+				33C83DEA8D405438CC5E78AF /* Pods_ReciptopiaTests.framework */,
+				7F7E02817633E2187EA8D706 /* Pods_ReciptopiaUIKit.framework */,
+				AF47A66D9989AB8BE9159C1A /* Pods_ReciptopiaUIKit_ReciptopiaUIKitTests.framework */,
+				269C9F305E914C96D2BB8071 /* Pods_Reciptopia_iOS.framework */,
+				E720ADA649BC4529A7931D4F /* Pods_Reciptopia_iOS_Reciptopia_iOSTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -401,6 +645,12 @@
 			children = (
 				A541594227F35E9200C851A2 /* UIColor+.swift */,
 				A541593F27F35D4800C851A2 /* UIButton+.swift */,
+				A566D6F927F71C29000D2B46 /* UITextField+.swift */,
+				A58D834727F57B680093CD72 /* UICollectionView+.swift */,
+				A5E81F2727F5E4A70042F01E /* UICollectionViewCell+.swift */,
+				A50317B327FD7BC400AE7867 /* UITableView+.swift */,
+				A50317B527FD7BCC00AE7867 /* UITableViewCell+.swift */,
+				A5B8674127FDC4AB00E0CE96 /* UIImage+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -440,11 +690,180 @@
 			path = Global;
 			sourceTree = "<group>";
 		};
+		A566D6CB27F6EBB8000D2B46 /* IngredientCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				A566D6CC27F6EBE5000D2B46 /* IngredientCollectionView.swift */,
+				A566D6CE27F6EC09000D2B46 /* IngredientCollectionViewDelegate.swift */,
+				A566D6D027F6EDCA000D2B46 /* IngredientCell.swift */,
+			);
+			path = IngredientCollectionView;
+			sourceTree = "<group>";
+		};
+		A566D6D827F6F270000D2B46 /* ReciptopiaKit */ = {
+			isa = PBXGroup;
+			children = (
+				A566D6D927F6F270000D2B46 /* ReciptopiaKit.h */,
+				A566D6F227F6F2A3000D2B46 /* Model */,
+				A516027B27FEA1900061170A /* Repository */,
+				A516027A27FEA1890061170A /* DataStore */,
+				A566D6E427F6F270000D2B46 /* ReciptopiaKitTests */,
+			);
+			path = ReciptopiaKit;
+			sourceTree = "<group>";
+		};
+		A566D6E427F6F270000D2B46 /* ReciptopiaKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				A566D6E527F6F270000D2B46 /* ReciptopiaKitTests.swift */,
+			);
+			path = ReciptopiaKitTests;
+			sourceTree = "<group>";
+		};
+		A566D6F227F6F2A3000D2B46 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A566D6F327F6F2A9000D2B46 /* Ingredient.swift */,
+				A50317AF27FD764500AE7867 /* History.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A570E2BD27F6ABAA00F734C0 /* CheckIngredient */ = {
+			isa = PBXGroup;
+			children = (
+				A570E2BE27F6ABE400F734C0 /* CheckIngredientViewController.swift */,
+				A570E2C427F6B4BF00F734C0 /* CheckIngredientRootView.swift */,
+				A570E2C027F6AC2000F734C0 /* CheckIngredientViewModel.swift */,
+			);
+			path = CheckIngredient;
+			sourceTree = "<group>";
+		};
 		A58D833B27F551430093CD72 /* ManagePicture */ = {
 			isa = PBXGroup;
 			children = (
+				A58D833E27F55C220093CD72 /* ManagePictureViewController.swift */,
+				A58D834027F5732D0093CD72 /* ManagePictureRootView.swift */,
 			);
 			path = ManagePicture;
+			sourceTree = "<group>";
+		};
+		A58D834227F573BF0093CD72 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A58D834327F573C70093CD72 /* ImageCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A58D834927F582630093CD72 /* ManagePicture */ = {
+			isa = PBXGroup;
+			children = (
+				A5E81F2527F5DD9D0042F01E /* ManagePictureRootViewTests.swift */,
+			);
+			path = ManagePicture;
+			sourceTree = "<group>";
+		};
+		A5BDB36C27FD5A7000FAEC18 /* SearchIngredient */ = {
+			isa = PBXGroup;
+			children = (
+				A5BDB36D27FD5A8C00FAEC18 /* SearchIngredientViewControllerTests.swift */,
+				A5BDB36F27FD5EE300FAEC18 /* SearchIngredientRootViewTests.swift */,
+			);
+			path = SearchIngredient;
+			sourceTree = "<group>";
+		};
+		A5BFC22D27FBDFF50030776C /* ContainerView */ = {
+			isa = PBXGroup;
+			children = (
+				A5BFC22E27FBE0090030776C /* ContainerView.swift */,
+			);
+			path = ContainerView;
+			sourceTree = "<group>";
+		};
+		A5BFC23227FC0F9B0030776C /* SearchIngredient */ = {
+			isa = PBXGroup;
+			children = (
+				A5BFC23927FC15490030776C /* SearchIngredientNavigationController.swift */,
+				A5BFC23527FC0FFE0030776C /* SearchIngredientViewController.swift */,
+				A5BFC23327FC0FDE0030776C /* SearchIngredientRootView.swift */,
+				A5BFC23727FC109E0030776C /* SearchIngredientViewModel.swift */,
+				A5BDB37127FD6E2A00FAEC18 /* SearchIngredientContainerView.swift */,
+				A5BFC23B27FC18840030776C /* SearchHistory+FavoritePost */,
+				A5BFC23C27FC188B0030776C /* PostSearchResult */,
+			);
+			path = SearchIngredient;
+			sourceTree = "<group>";
+		};
+		A5BFC23B27FC18840030776C /* SearchHistory+FavoritePost */ = {
+			isa = PBXGroup;
+			children = (
+				A5BFC23D27FC19F40030776C /* HistoryAndFavoriteRootView.swift */,
+				A5C4B5D927FD86BA002C3510 /* HistoryAndFavoriteContainerView.swift */,
+				A5BFC24127FC1FBA0030776C /* SearchHistory */,
+				A5BFC24227FC1FBD0030776C /* FavoritePost */,
+			);
+			path = "SearchHistory+FavoritePost";
+			sourceTree = "<group>";
+		};
+		A5BFC23C27FC188B0030776C /* PostSearchResult */ = {
+			isa = PBXGroup;
+			children = (
+				A5BDB37527FD70FE00FAEC18 /* PostSearchListView.swift */,
+			);
+			path = PostSearchResult;
+			sourceTree = "<group>";
+		};
+		A5BFC24127FC1FBA0030776C /* SearchHistory */ = {
+			isa = PBXGroup;
+			children = (
+				A5BFC24327FC1FDE0030776C /* SearchHistoryViewModel.swift */,
+				A50317AB27FD734D00AE7867 /* SearchHistoryRootView.swift */,
+			);
+			path = SearchHistory;
+			sourceTree = "<group>";
+		};
+		A5BFC24227FC1FBD0030776C /* FavoritePost */ = {
+			isa = PBXGroup;
+			children = (
+				A5BFC23F27FC1D1B0030776C /* FavoritePostViewModel.swift */,
+				A50317AD27FD736C00AE7867 /* FavoritePostRootView.swift */,
+			);
+			path = FavoritePost;
+			sourceTree = "<group>";
+		};
+		A5F83098711031EF251760FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				510D67B517E88FD33A1EE36F /* Pods-Reciptopia.debug.xcconfig */,
+				6319A0FAFD02E9D53D4978B2 /* Pods-Reciptopia.release.xcconfig */,
+				1CA3A1E230CAF2284ADB3B88 /* Pods-Reciptopia-ReciptopiaUITests.debug.xcconfig */,
+				79357960D38732ECF368E154 /* Pods-Reciptopia-ReciptopiaUITests.release.xcconfig */,
+				FB875203737DF8BA28808A64 /* Pods-ReciptopiaKit.debug.xcconfig */,
+				2DBD5C339D5C7DAAAA64763C /* Pods-ReciptopiaKit.release.xcconfig */,
+				528A08BAD986E3995138C015 /* Pods-ReciptopiaKit-ReciptopiaKitTests.debug.xcconfig */,
+				133EEB7B897869361A45D5BC /* Pods-ReciptopiaKit-ReciptopiaKitTests.release.xcconfig */,
+				A6411103935FE51AB72F649A /* Pods-ReciptopiaTests.debug.xcconfig */,
+				014A51B910DFBE7E08B11B12 /* Pods-ReciptopiaTests.release.xcconfig */,
+				C0451DDA65C1D313A04893E7 /* Pods-ReciptopiaUIKit.debug.xcconfig */,
+				30C4D08689A0488197D4A730 /* Pods-ReciptopiaUIKit.release.xcconfig */,
+				35E2D52186492430BCB43A60 /* Pods-ReciptopiaUIKit-ReciptopiaUIKitTests.debug.xcconfig */,
+				955EF1FA9C7AE1B236F562C8 /* Pods-ReciptopiaUIKit-ReciptopiaUIKitTests.release.xcconfig */,
+				D828C98309D6F0B031C961D0 /* Pods-Reciptopia_iOS.debug.xcconfig */,
+				414728A1F883E5A6EAA8B941 /* Pods-Reciptopia_iOS.release.xcconfig */,
+				628BE557D9AD67E749FAFF21 /* Pods-Reciptopia_iOS-Reciptopia_iOSTests.debug.xcconfig */,
+				3472D2FE5CB72786947613FB /* Pods-Reciptopia_iOS-Reciptopia_iOSTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A5F9734C27F9E688000DDDD5 /* CheckIngredient */ = {
+			isa = PBXGroup;
+			children = (
+				A5F9734D27F9E6A5000DDDD5 /* CheckIngredientRootViewTests.swift */,
+				A599D5EC27FA968A00F99032 /* CheckIngredientViewModel_IngredientCollectionViewDelegeteTests.swift */,
+			);
+			path = CheckIngredient;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -466,6 +885,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A566D6D227F6F270000D2B46 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A566D6E727F6F270000D2B46 /* ReciptopiaKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -473,20 +900,21 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A54158BF27F3280A00C851A2 /* Build configuration list for PBXNativeTarget "Reciptopia" */;
 			buildPhases = (
+				E8008D7B15E5A5464235C064 /* [CP] Check Pods Manifest.lock */,
 				A541589127F3280900C851A2 /* Sources */,
 				A541589227F3280900C851A2 /* Frameworks */,
 				A541589327F3280900C851A2 /* Resources */,
 				A54158E627F328AB00C851A2 /* Embed Frameworks */,
+				18CAFE74F835269046DDD81D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				A54158E027F328AB00C851A2 /* PBXTargetDependency */,
 				A541590327F3293C00C851A2 /* PBXTargetDependency */,
+				A566D6E927F6F270000D2B46 /* PBXTargetDependency */,
 			);
 			name = Reciptopia;
-			packageProductDependencies = (
-			);
 			productName = Reciptopia;
 			productReference = A541589527F3280900C851A2 /* Reciptopia.app */;
 			productType = "com.apple.product-type.application";
@@ -495,6 +923,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A54158C227F3280A00C851A2 /* Build configuration list for PBXNativeTarget "ReciptopiaTests" */;
 			buildPhases = (
+				8E0853B682D13DBFBE5D743F /* [CP] Check Pods Manifest.lock */,
 				A54158A727F3280A00C851A2 /* Sources */,
 				A54158A827F3280A00C851A2 /* Frameworks */,
 				A54158A927F3280A00C851A2 /* Resources */,
@@ -513,6 +942,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A54158C527F3280A00C851A2 /* Build configuration list for PBXNativeTarget "ReciptopiaUITests" */;
 			buildPhases = (
+				BD1976D10F9F37269CE2EC20 /* [CP] Check Pods Manifest.lock */,
 				A54158B127F3280A00C851A2 /* Sources */,
 				A54158B227F3280A00C851A2 /* Frameworks */,
 				A54158B327F3280A00C851A2 /* Resources */,
@@ -531,22 +961,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A54158E327F328AB00C851A2 /* Build configuration list for PBXNativeTarget "Reciptopia_iOS" */;
 			buildPhases = (
+				066470F341CC3B29FA0C65E2 /* [CP] Check Pods Manifest.lock */,
 				A54158C927F328AB00C851A2 /* Headers */,
 				A54158CA27F328AB00C851A2 /* Sources */,
 				A54158CB27F328AB00C851A2 /* Frameworks */,
 				A54158CC27F328AB00C851A2 /* Resources */,
+				A5EF04EE27FDE1B6006B1C66 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A5EF052A27FDE617006B1C66 /* PBXTargetDependency */,
+				A5EF052E27FDE617006B1C66 /* PBXTargetDependency */,
 			);
 			name = Reciptopia_iOS;
-			packageProductDependencies = (
-				A541591C27F3490F00C851A2 /* SnapKit */,
-				A541592627F34A2E00C851A2 /* RxCocoa */,
-				A541592827F34A2E00C851A2 /* RxRelay */,
-				A541592A27F34A2E00C851A2 /* RxSwift */,
-			);
 			productName = Reciptopia_iOS;
 			productReference = A54158CE27F328AB00C851A2 /* Reciptopia_iOS.framework */;
 			productType = "com.apple.product-type.framework";
@@ -555,9 +983,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A54158E727F328AB00C851A2 /* Build configuration list for PBXNativeTarget "Reciptopia_iOSTests" */;
 			buildPhases = (
+				2E44FFDD81F908186DB1232E /* [CP] Check Pods Manifest.lock */,
 				A54158D127F328AB00C851A2 /* Sources */,
 				A54158D227F328AB00C851A2 /* Frameworks */,
 				A54158D327F328AB00C851A2 /* Resources */,
+				5FFA09AC83A6CF37CB33691C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -566,9 +996,6 @@
 				A54158DA27F328AB00C851A2 /* PBXTargetDependency */,
 			);
 			name = Reciptopia_iOSTests;
-			packageProductDependencies = (
-				A541593627F34F4400C851A2 /* RxTest */,
-			);
 			productName = Reciptopia_iOSTests;
 			productReference = A54158D527F328AB00C851A2 /* Reciptopia_iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -577,10 +1004,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A541590627F3293C00C851A2 /* Build configuration list for PBXNativeTarget "ReciptopiaUIKit" */;
 			buildPhases = (
+				905DEECF301FF65DDAAF2377 /* [CP] Check Pods Manifest.lock */,
 				A54158EC27F3293C00C851A2 /* Headers */,
 				A54158ED27F3293C00C851A2 /* Sources */,
 				A54158EE27F3293C00C851A2 /* Frameworks */,
 				A54158EF27F3293C00C851A2 /* Resources */,
+				A5EF04FE27FDE21C006B1C66 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -595,9 +1024,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A541590927F3293C00C851A2 /* Build configuration list for PBXNativeTarget "ReciptopiaUIKitTests" */;
 			buildPhases = (
+				F5F964C652DCD213C8071C6C /* [CP] Check Pods Manifest.lock */,
 				A54158F427F3293C00C851A2 /* Sources */,
 				A54158F527F3293C00C851A2 /* Frameworks */,
 				A54158F627F3293C00C851A2 /* Resources */,
+				75FA57745BAC18C7EDA4D5C8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -608,6 +1039,45 @@
 			name = ReciptopiaUIKitTests;
 			productName = ReciptopiaUIKitTests;
 			productReference = A54158F827F3293C00C851A2 /* ReciptopiaUIKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A566D6D627F6F270000D2B46 /* ReciptopiaKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A566D6EC27F6F270000D2B46 /* Build configuration list for PBXNativeTarget "ReciptopiaKit" */;
+			buildPhases = (
+				BC8FE7F8470146FCCAA1EC43 /* [CP] Check Pods Manifest.lock */,
+				A566D6D227F6F270000D2B46 /* Headers */,
+				A566D6D327F6F270000D2B46 /* Sources */,
+				A566D6D427F6F270000D2B46 /* Frameworks */,
+				A566D6D527F6F270000D2B46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReciptopiaKit;
+			productName = ReciptopiaKit;
+			productReference = A566D6D727F6F270000D2B46 /* ReciptopiaKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A566D6DD27F6F270000D2B46 /* ReciptopiaKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A566D6EF27F6F270000D2B46 /* Build configuration list for PBXNativeTarget "ReciptopiaKitTests" */;
+			buildPhases = (
+				6DBAFF645DF9902519961940 /* [CP] Check Pods Manifest.lock */,
+				A566D6DA27F6F270000D2B46 /* Sources */,
+				A566D6DB27F6F270000D2B46 /* Frameworks */,
+				A566D6DC27F6F270000D2B46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A566D6E127F6F270000D2B46 /* PBXTargetDependency */,
+				A566D6E327F6F270000D2B46 /* PBXTargetDependency */,
+			);
+			name = ReciptopiaKitTests;
+			productName = ReciptopiaKitTests;
+			productReference = A566D6DE27F6F270000D2B46 /* ReciptopiaKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -647,6 +1117,14 @@
 						CreatedOnToolsVersion = 13.3;
 						TestTargetID = A541589427F3280900C851A2;
 					};
+					A566D6D627F6F270000D2B46 = {
+						CreatedOnToolsVersion = 13.3;
+						LastSwiftMigration = 1330;
+					};
+					A566D6DD27F6F270000D2B46 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = A541589427F3280900C851A2;
+					};
 				};
 			};
 			buildConfigurationList = A541589027F3280900C851A2 /* Build configuration list for PBXProject "Reciptopia" */;
@@ -658,10 +1136,6 @@
 				Base,
 			);
 			mainGroup = A541588C27F3280900C851A2;
-			packageReferences = (
-				A541591B27F3490F00C851A2 /* XCRemoteSwiftPackageReference "SnapKit" */,
-				A541591E27F34A1800C851A2 /* XCRemoteSwiftPackageReference "RxSwift" */,
-			);
 			productRefGroup = A541589627F3280900C851A2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -673,6 +1147,8 @@
 				A54158D427F328AB00C851A2 /* Reciptopia_iOSTests */,
 				A54158F027F3293C00C851A2 /* ReciptopiaUIKit */,
 				A54158F727F3293C00C851A2 /* ReciptopiaUIKitTests */,
+				A566D6D627F6F270000D2B46 /* ReciptopiaKit */,
+				A566D6DD27F6F270000D2B46 /* ReciptopiaKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -729,7 +1205,273 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A566D6D527F6F270000D2B46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A566D6DC27F6F270000D2B46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		066470F341CC3B29FA0C65E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Reciptopia_iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		18CAFE74F835269046DDD81D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Reciptopia/Pods-Reciptopia-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Reciptopia/Pods-Reciptopia-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Reciptopia/Pods-Reciptopia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E44FFDD81F908186DB1232E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Reciptopia_iOS-Reciptopia_iOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FFA09AC83A6CF37CB33691C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Reciptopia_iOS-Reciptopia_iOSTests/Pods-Reciptopia_iOS-Reciptopia_iOSTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Reciptopia_iOS-Reciptopia_iOSTests/Pods-Reciptopia_iOS-Reciptopia_iOSTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Reciptopia_iOS-Reciptopia_iOSTests/Pods-Reciptopia_iOS-Reciptopia_iOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DBAFF645DF9902519961940 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReciptopiaKit-ReciptopiaKitTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75FA57745BAC18C7EDA4D5C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReciptopiaUIKit-ReciptopiaUIKitTests/Pods-ReciptopiaUIKit-ReciptopiaUIKitTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReciptopiaUIKit-ReciptopiaUIKitTests/Pods-ReciptopiaUIKit-ReciptopiaUIKitTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReciptopiaUIKit-ReciptopiaUIKitTests/Pods-ReciptopiaUIKit-ReciptopiaUIKitTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E0853B682D13DBFBE5D743F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReciptopiaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		905DEECF301FF65DDAAF2377 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReciptopiaUIKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC8FE7F8470146FCCAA1EC43 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReciptopiaKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD1976D10F9F37269CE2EC20 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Reciptopia-ReciptopiaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8008D7B15E5A5464235C064 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Reciptopia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5F964C652DCD213C8071C6C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReciptopiaUIKit-ReciptopiaUIKitTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A541589127F3280900C851A2 /* Sources */ = {
@@ -763,11 +1505,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A570E2BF27F6ABE400F734C0 /* CheckIngredientViewController.swift in Sources */,
+				A58D834127F5732D0093CD72 /* ManagePictureRootView.swift in Sources */,
+				A58D833F27F55C220093CD72 /* ManagePictureViewController.swift in Sources */,
 				A541591A27F348EB00C851A2 /* PictureIngredientRootView.swift in Sources */,
+				A5BFC24427FC1FDE0030776C /* SearchHistoryViewModel.swift in Sources */,
+				A5BFC23427FC0FDE0030776C /* SearchIngredientRootView.swift in Sources */,
+				A5BFC23E27FC19F40030776C /* HistoryAndFavoriteRootView.swift in Sources */,
+				A5BFC23627FC0FFE0030776C /* SearchIngredientViewController.swift in Sources */,
 				A541593127F34CEB00C851A2 /* BehaviorRelay+.swift in Sources */,
+				A570E2C127F6AC2000F734C0 /* CheckIngredientViewModel.swift in Sources */,
+				A5BFC23A27FC15490030776C /* SearchIngredientNavigationController.swift in Sources */,
+				A5C4B5DA27FD86BA002C3510 /* HistoryAndFavoriteContainerView.swift in Sources */,
+				A5BDB37227FD6E2A00FAEC18 /* SearchIngredientContainerView.swift in Sources */,
+				A50317AE27FD736C00AE7867 /* FavoritePostRootView.swift in Sources */,
+				A570E2C527F6B4BF00F734C0 /* CheckIngredientRootView.swift in Sources */,
+				A50317AC27FD734D00AE7867 /* SearchHistoryRootView.swift in Sources */,
 				A541595227F36B1800C851A2 /* Log.swift in Sources */,
+				A5BDB37627FD70FE00FAEC18 /* PostSearchListView.swift in Sources */,
 				A541593E27F35B6F00C851A2 /* PictureIngredientAction.swift in Sources */,
 				A536FED427F54C3000B3D947 /* PictureIngredientNavigationController.swift in Sources */,
+				A5BFC24027FC1D1B0030776C /* FavoritePostViewModel.swift in Sources */,
+				A5BFC23827FC109E0030776C /* SearchIngredientViewModel.swift in Sources */,
+				A516027D27FEA8030061170A /* DIContainer.swift in Sources */,
 				A541592D27F34ADA00C851A2 /* PictureIngredientViewModel.swift in Sources */,
 				A541591827F348A700C851A2 /* PictureIngredientViewController.swift in Sources */,
 			);
@@ -778,10 +1538,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A58D833A27F5503E0093CD72 /* PictureIngredientViewControllerTests.swift in Sources */,
+				A5BDB36E27FD5A8C00FAEC18 /* SearchIngredientViewControllerTests.swift in Sources */,
 				A541593B27F3578100C851A2 /* XCTestCase+.swift in Sources */,
+				A599D5ED27FA968A00F99032 /* CheckIngredientViewModel_IngredientCollectionViewDelegeteTests.swift in Sources */,
 				A541593527F34E0800C851A2 /* BehaviorRelayExtensionTests.swift in Sources */,
+				A5E81F2627F5DD9D0042F01E /* ManagePictureRootViewTests.swift in Sources */,
+				A5BDB37027FD5EE300FAEC18 /* SearchIngredientRootViewTests.swift in Sources */,
 				A541595327F36B1800C851A2 /* Log.swift in Sources */,
 				A541594C27F36A5100C851A2 /* PictureIngredientViewModelTests.swift in Sources */,
+				A5F9734E27F9E6A5000DDDD5 /* CheckIngredientRootViewTests.swift in Sources */,
 				A5E0577527F41AC200646852 /* PictureIngredientRootViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -790,13 +1555,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A566D6CF27F6EC09000D2B46 /* IngredientCollectionViewDelegate.swift in Sources */,
 				A541594027F35D4800C851A2 /* UIButton+.swift in Sources */,
 				A536FED627F54C8400B3D947 /* BaseNavigationController.swift in Sources */,
+				A5E81F2827F5E4A70042F01E /* UICollectionViewCell+.swift in Sources */,
 				A541591627F334F200C851A2 /* BackCameraView.swift in Sources */,
+				A5BDB37427FD6FB100FAEC18 /* PageSegmentedControl.swift in Sources */,
+				A58D834827F57B680093CD72 /* UICollectionView+.swift in Sources */,
+				A566D6FA27F71C29000D2B46 /* UITextField+.swift in Sources */,
+				A566D6D127F6EDCA000D2B46 /* IngredientCell.swift in Sources */,
+				A566D6CD27F6EBE5000D2B46 /* IngredientCollectionView.swift in Sources */,
+				A5BFC22F27FBE0090030776C /* ContainerView.swift in Sources */,
 				A541595427F36B1900C851A2 /* Log.swift in Sources */,
 				A541590F27F329A900C851A2 /* BaseViewController.swift in Sources */,
+				A50317B627FD7BCC00AE7867 /* UITableViewCell+.swift in Sources */,
+				A5E81F2427F5D4F30042F01E /* BottomButton.swift in Sources */,
+				A5B8674227FDC4AB00E0CE96 /* UIImage+.swift in Sources */,
+				A50317B427FD7BC400AE7867 /* UITableView+.swift in Sources */,
+				A58D834427F573C70093CD72 /* ImageCell.swift in Sources */,
 				A541591327F32BA600C851A2 /* BaseView.swift in Sources */,
+				A566D6FC27F725AD000D2B46 /* CapsuleField.swift in Sources */,
 				A541594327F35E9200C851A2 /* UIColor+.swift in Sources */,
+				A51F766D27FEBEB900B7A29A /* FloatingButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -808,6 +1588,23 @@
 				A541590027F3293C00C851A2 /* BaseViewTests.swift in Sources */,
 				A541595527F36B1A00C851A2 /* Log.swift in Sources */,
 				A541594927F360EF00C851A2 /* XCTestCase+.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A566D6D327F6F270000D2B46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A50317B027FD764500AE7867 /* History.swift in Sources */,
+				A566D6F427F6F2A9000D2B46 /* Ingredient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A566D6DA27F6F270000D2B46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A566D6E627F6F270000D2B46 /* ReciptopiaKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -854,6 +1651,31 @@
 			target = A54158F027F3293C00C851A2 /* ReciptopiaUIKit */;
 			targetProxy = A541590227F3293C00C851A2 /* PBXContainerItemProxy */;
 		};
+		A566D6E127F6F270000D2B46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A566D6D627F6F270000D2B46 /* ReciptopiaKit */;
+			targetProxy = A566D6E027F6F270000D2B46 /* PBXContainerItemProxy */;
+		};
+		A566D6E327F6F270000D2B46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A541589427F3280900C851A2 /* Reciptopia */;
+			targetProxy = A566D6E227F6F270000D2B46 /* PBXContainerItemProxy */;
+		};
+		A566D6E927F6F270000D2B46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A566D6D627F6F270000D2B46 /* ReciptopiaKit */;
+			targetProxy = A566D6E827F6F270000D2B46 /* PBXContainerItemProxy */;
+		};
+		A5EF052A27FDE617006B1C66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A566D6D627F6F270000D2B46 /* ReciptopiaKit */;
+			targetProxy = A5EF052927FDE617006B1C66 /* PBXContainerItemProxy */;
+		};
+		A5EF052E27FDE617006B1C66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A54158F027F3293C00C851A2 /* ReciptopiaUIKit */;
+			targetProxy = A5EF052D27FDE617006B1C66 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -871,6 +1693,7 @@
 		A54158BD27F3280A00C851A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -931,6 +1754,7 @@
 		A54158BE27F3280A00C851A2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -984,8 +1808,9 @@
 		};
 		A54158C027F3280A00C851A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 510D67B517E88FD33A1EE36F /* Pods-Reciptopia.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -1013,8 +1838,9 @@
 		};
 		A54158C127F3280A00C851A2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6319A0FAFD02E9D53D4978B2 /* Pods-Reciptopia.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -1042,8 +1868,9 @@
 		};
 		A54158C327F3280A00C851A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6411103935FE51AB72F649A /* Pods-ReciptopiaTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1062,8 +1889,9 @@
 		};
 		A54158C427F3280A00C851A2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 014A51B910DFBE7E08B11B12 /* Pods-ReciptopiaTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1082,8 +1910,9 @@
 		};
 		A54158C627F3280A00C851A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CA3A1E230CAF2284ADB3B88 /* Pods-Reciptopia-ReciptopiaUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GTB6BR222W;
@@ -1101,8 +1930,9 @@
 		};
 		A54158C727F3280A00C851A2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79357960D38732ECF368E154 /* Pods-Reciptopia-ReciptopiaUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GTB6BR222W;
@@ -1120,7 +1950,9 @@
 		};
 		A54158E427F328AB00C851A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D828C98309D6F0B031C961D0 /* Pods-Reciptopia_iOS.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1153,7 +1985,9 @@
 		};
 		A54158E527F328AB00C851A2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 414728A1F883E5A6EAA8B941 /* Pods-Reciptopia_iOS.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1185,8 +2019,9 @@
 		};
 		A54158E827F328AB00C851A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 628BE557D9AD67E749FAFF21 /* Pods-Reciptopia_iOS-Reciptopia_iOSTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GTB6BR222W;
@@ -1204,8 +2039,9 @@
 		};
 		A54158E927F328AB00C851A2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3472D2FE5CB72786947613FB /* Pods-Reciptopia_iOS-Reciptopia_iOSTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GTB6BR222W;
@@ -1223,7 +2059,9 @@
 		};
 		A541590727F3293C00C851A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0451DDA65C1D313A04893E7 /* Pods-ReciptopiaUIKit.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1256,7 +2094,9 @@
 		};
 		A541590827F3293C00C851A2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30C4D08689A0488197D4A730 /* Pods-ReciptopiaUIKit.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1288,8 +2128,9 @@
 		};
 		A541590A27F3293C00C851A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35E2D52186492430BCB43A60 /* Pods-ReciptopiaUIKit-ReciptopiaUIKitTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GTB6BR222W;
@@ -1307,8 +2148,9 @@
 		};
 		A541590B27F3293C00C851A2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 955EF1FA9C7AE1B236F562C8 /* Pods-ReciptopiaUIKit-ReciptopiaUIKitTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GTB6BR222W;
@@ -1316,6 +2158,115 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Harry.ReciptopiaUIKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reciptopia.app/Reciptopia";
+			};
+			name = Release;
+		};
+		A566D6ED27F6F270000D2B46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB875203737DF8BA28808A64 /* Pods-ReciptopiaKit.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = GTB6BR222W;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Harry.ReciptopiaKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A566D6EE27F6F270000D2B46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DBD5C339D5C7DAAAA64763C /* Pods-ReciptopiaKit.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = GTB6BR222W;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Harry.ReciptopiaKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A566D6F027F6F270000D2B46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 528A08BAD986E3995138C015 /* Pods-ReciptopiaKit-ReciptopiaKitTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GTB6BR222W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Harry.ReciptopiaKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reciptopia.app/Reciptopia";
+			};
+			name = Debug;
+		};
+		A566D6F127F6F270000D2B46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 133EEB7B897869361A45D5BC /* Pods-ReciptopiaKit-ReciptopiaKitTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GTB6BR222W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Harry.ReciptopiaKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -1399,54 +2350,25 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		A566D6EC27F6F270000D2B46 /* Build configuration list for PBXNativeTarget "ReciptopiaKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A566D6ED27F6F270000D2B46 /* Debug */,
+				A566D6EE27F6F270000D2B46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A566D6EF27F6F270000D2B46 /* Build configuration list for PBXNativeTarget "ReciptopiaKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A566D6F027F6F270000D2B46 /* Debug */,
+				A566D6F127F6F270000D2B46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		A541591B27F3490F00C851A2 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
-		A541591E27F34A1800C851A2 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ReactiveX/RxSwift";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		A541591C27F3490F00C851A2 /* SnapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A541591B27F3490F00C851A2 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
-		};
-		A541592627F34A2E00C851A2 /* RxCocoa */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A541591E27F34A1800C851A2 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxCocoa;
-		};
-		A541592827F34A2E00C851A2 /* RxRelay */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A541591E27F34A1800C851A2 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxRelay;
-		};
-		A541592A27F34A2E00C851A2 /* RxSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A541591E27F34A1800C851A2 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxSwift;
-		};
-		A541593627F34F4400C851A2 /* RxTest */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A541591E27F34A1800C851A2 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxTest;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A541588D27F3280900C851A2 /* Project object */;
 }
