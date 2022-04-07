@@ -167,22 +167,26 @@ extension PictureIngredientRootView {
     
     func bindIngredientCountToView() {
         viewModel.ingredientPictures
+            .observe(on: MainScheduler.asyncInstance)
             .map { "\($0.count) / \(self.viewModel.maxPictureCount)" }
             .bind(to: managePictureButton.rx.title())
             .disposed(by: disposeBag)
         
         viewModel.ingredientPictures
+            .observe(on: MainScheduler.asyncInstance)
             .map { "\($0.count)개의 재료 분석하기" }
             .bind(to: analyzePictureButton.rx.title())
             .disposed(by: disposeBag)
         
         viewModel.ingredientPictures
+            .observe(on: MainScheduler.asyncInstance)
             .map { !$0.isEmpty }
             .bind(to: managePictureButton.rx.isEnabled,
                   analyzePictureButton.rx.isEnabled)
             .disposed(by: disposeBag)
         
         viewModel.ingredientPictures
+            .observe(on: MainScheduler.asyncInstance)
             .map { $0.count < self.viewModel.maxPictureCount }
             .bind(to: presentPhotoAlbumButton.rx.isEnabled,
                   takePhotoButton.rx.isEnabled)
