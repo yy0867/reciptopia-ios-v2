@@ -8,7 +8,6 @@
 import UIKit
 import Reciptopia_iOS
 
-
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
@@ -17,12 +16,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        let container = DIContainer()
+        
         window = UIWindow(frame: UIScreen.main.bounds)
-        let viewModel = PictureIngredientViewModel()
-        let mainVC = PictureIngredientNavigationController(viewModel: viewModel)
+//        let viewModel = CheckIngredientViewModel()
+//        let mainVC = PictureIngredientViewController(viewModel: viewModel)
+//        let mainVC = CheckIngredientViewController(viewModel: viewModel)
+//        let viewModel = SearchIngredientViewModel()
+//        let mainVC = SearchIngredientNavigationController(viewModel: viewModel)
         
         window?.makeKeyAndVisible()
-        window?.rootViewController = mainVC
+        window?.rootViewController = container.makeSearchIngredientNavigationController()
         
         return true
     }
