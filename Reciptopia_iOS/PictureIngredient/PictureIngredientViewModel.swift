@@ -26,6 +26,7 @@ protocol PictureIngredientViewModelOutput {
     var ingredientPictures: BehaviorRelay<[Data]> { get }
     var action: PublishRelay<PictureIngredientAction> { get }
     var maxPictureCount: Int { get }
+    var remainPictureCount: Int { get }
 }
 
 protocol PictureIngredientViewModelProtocol:
@@ -38,6 +39,10 @@ public final class PictureIngredientViewModel: PictureIngredientViewModelProtoco
     let ingredientPictures = BehaviorRelay<[Data]>(value: [])
     let action = PublishRelay<PictureIngredientAction>()
     let maxPictureCount = 10
+    
+    var remainPictureCount: Int {
+        maxPictureCount - ingredientPictures.value.count
+    }
     
     // MARK: - Methods
     public init() {
