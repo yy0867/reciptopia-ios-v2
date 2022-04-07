@@ -14,6 +14,7 @@ public extension UIColor {
     static let mainIngredient = UIColor(0xEDAE0C)
     static let brightGray = UIColor(0xE5E5E5)
     static let searchHistoryTint = UIColor(0xBEBEF0)
+    static let favoriteStartTint = UIColor(0xEFDD3F)
     
     // MARK: - Methods
     convenience init(_ hex: Int) {

@@ -8,7 +8,15 @@
 public extension UIImage {
     
     static var searchHistoryIcon: UIImage? {
-        let icon = UIImage(systemName: "magnifyingglass.circle.fill")?.withTintColor(.searchHistoryTint, renderingMode: .alwaysOriginal)
+        let icon = UIImage(systemName: "magnifyingglass.circle.fill")?
+            .withTintColor(.searchHistoryTint, renderingMode: .alwaysOriginal)
+        
+        return icon
+    }
+    
+    static var favoriteStarIcon: UIImage? {
+        let icon = UIImage(systemName: "star.fill")?
+            .withTintColor(.favoriteStartTint, renderingMode: .alwaysOriginal)
         
         return icon
     }
