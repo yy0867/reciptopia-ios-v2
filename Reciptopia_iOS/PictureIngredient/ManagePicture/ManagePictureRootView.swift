@@ -12,7 +12,7 @@ import RxCocoa
 final class ManagePictureRootView: BaseView {
     
     // MARK: - Properties
-    let viewModel: PictureIngredientViewModel
+    let viewModel: PictureIngredientViewModelProtocol
     let disposeBag = DisposeBag()
     var selectedIndexForRemove = Set<Int>()
     
@@ -30,7 +30,7 @@ final class ManagePictureRootView: BaseView {
     }()
     
     // MARK: - Methods
-    init(frame: CGRect = .zero, viewModel: PictureIngredientViewModel) {
+    init(frame: CGRect = .zero, viewModel: PictureIngredientViewModelProtocol) {
         self.viewModel = viewModel
         super.init(frame: frame)
         bindViewModel()

@@ -10,18 +10,12 @@ import ReciptopiaUIKit
 public final class ManagePictureViewController: BaseViewController {
     
     // MARK: - Properties
-    let viewModel: PictureIngredientViewModel
+    let viewModel: PictureIngredientViewModelProtocol
     
     // MARK: - Methods
-    public init(viewModel: PictureIngredientViewModel) {
+    init(viewModel: PictureIngredientViewModelProtocol) {
         self.viewModel = viewModel
         super.init()
-        
-        // MARK: SHOULD REMOVE HERE
-        let imageData = UIImage(named: "FakeFoodImage")!.jpegData(compressionQuality: 1)!
-        for _ in 0...9 {
-            viewModel.addPicture(data: imageData)
-        }
     }
     
     public override func viewDidLoad() {
