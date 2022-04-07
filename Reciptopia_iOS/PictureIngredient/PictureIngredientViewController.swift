@@ -97,6 +97,29 @@ extension PictureIngredientViewController {
     }
     
     private func presentAlbum() {
+        let albumVC = ImagePickerController()
+        albumVC.settings.selection.max = viewModel.remainPictureCount
+        presentImagePicker(albumVC, select: nil, deselect: nil, cancel: nil, finish: { assets in
+            self.appendImageByAssets(assets)
+        })
+    }
+    
+    private func appendImageByAssets(_ assets: [PHAsset]) {
+        let manager = PHImageManager.default()
+        let option = PHImageRequestOptions()
+        option.deliveryMode = .opportunistic
+        option.resizeMode = .exact
+        option.isSynchronous = true
         
+        assets.forEach { asset in
+            DispatchQueue.global(qos: .background).async {
+                let size = CGSize(width: asset.pixelWidth, height: asset.pixelHeight)
+                manager.requestImage(for: asset, targetSize: size, contentMode: .aspectFit, options: option) {
+                    [weak self] image, _ in
+                    guard let imageData = image?.jpegData(compressionQuality: 1) else { return }
+                    self?.viewModel.addPicture(data: imageData)
+                }
+            }
+        }
     }
 }
