@@ -12,6 +12,7 @@ public protocol SearchIngredientViewModelInput {
     func addIngredient(name: String)
     func changeState(isMainIngredient state: Bool, at index: Int)
     func remove(at index: Int)
+    func searchButtonClicked()
 }
 
 public protocol SearchIngredientViewModelOutput {
@@ -38,6 +39,11 @@ public final class SearchIngredientViewModel: SearchIngredientViewModelProtocol 
     public func addIngredient(name: String) {
         let ingredient = Ingredient(isMainIngredient: false, name: name, amount: "")
         ingredients.append(ingredient)
+    }
+    
+    public func searchButtonClicked() {
+        let ingredientNames = ingredients.value.map { $0.name }.joined(separator: ", ")
+        print(ingredientNames)
     }
 }
 
