@@ -25,7 +25,7 @@ final class SearchIngredientRootView: BaseView {
     }()
     
     lazy var searchIngredientContainerView: SearchIngredientContainerView = {
-        let view = SearchIngredientContainerView()
+        let view = SearchIngredientContainerView(searchIngredientViewModelInput: viewModel)
         return view
     }()
     

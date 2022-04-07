@@ -10,8 +10,10 @@ import ReciptopiaUIKit
 final class SearchIngredientContainerView: ContainerView {
     
     // MARK: - Properties
+    let searchIngredientViewModelInput: SearchIngredientViewModelInput
+    
     lazy var historyAndFavoriteView: HistoryAndFavoriteRootView = {
-        let view = HistoryAndFavoriteRootView()
+        let view = HistoryAndFavoriteRootView(searchIngredientViewModelInput: searchIngredientViewModelInput)
         return view
     }()
     
@@ -21,7 +23,8 @@ final class SearchIngredientContainerView: ContainerView {
     }()
     
     // MARK: - Methods
-    init() {
+    init(searchIngredientViewModelInput: SearchIngredientViewModelInput) {
+        self.searchIngredientViewModelInput = searchIngredientViewModelInput
         super.init(frame: .zero)
         setSubviewList([historyAndFavoriteView, postSearchListView])
         presentSubview(at: 0)

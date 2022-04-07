@@ -10,6 +10,8 @@ import ReciptopiaUIKit
 final class HistoryAndFavoriteRootView: BaseView {
     
     // MARK: - Properties
+    let searchIngredientViewModelInput: SearchIngredientViewModelInput
+    
     lazy var pageSegment: PageSegmentedControl = {
         let segmentedControl = PageSegmentedControl()
         segmentedControl.insertSegment(withTitle: "검색 기록", at: 0, animated: false)
@@ -30,6 +32,11 @@ final class HistoryAndFavoriteRootView: BaseView {
     }()
     
     // MARK: - Methods
+    init(frame: CGRect = .zero, searchIngredientViewModelInput: SearchIngredientViewModelInput) {
+        self.searchIngredientViewModelInput = searchIngredientViewModelInput
+        super.init(frame: frame)
+    }
+    
     override func buildHierarchy() {
         addSubview(pageSegment)
         addSubview(historyAndFavoriteContainerView)
@@ -57,10 +64,21 @@ final class HistoryAndFavoriteRootView: BaseView {
             action: #selector(pageSelected),
             for: .valueChanged
         )
+        searchFloatingButton.addTarget(
+            self,
+            action: #selector(searchButtonClicked),
+            for: .touchUpInside
+        )
     }
     
+    // MARK: - @objc methods
     @objc
     func pageSelected(_ pageSegment: PageSegmentedControl) {
         historyAndFavoriteContainerView.presentSubview(at: pageSegment.selectedSegmentIndex)
+    }
+    
+    @objc
+    func searchButtonClicked() {
+        searchIngredientViewModelInput.searchButtonClicked()
     }
 }
