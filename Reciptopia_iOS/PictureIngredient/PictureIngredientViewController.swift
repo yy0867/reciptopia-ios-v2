@@ -8,6 +8,8 @@
 import ReciptopiaUIKit
 import RxSwift
 import RxRelay
+import BSImagePicker
+import Photos
 
 public final class PictureIngredientViewController: BaseViewController {
     
@@ -61,6 +63,17 @@ public final class PictureIngredientViewController: BaseViewController {
             action: #selector(PictureIngredientViewModel.searchByName),
             for: .touchUpInside
         )
+    }
+    
+    // MARK: - Manage Camera Lifecycle
+    public override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        (view as? PictureIngredientRootView)?.startCameraRunning()
+    }
+    
+    public override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        (view as? PictureIngredientRootView)?.stopCameraRunning()
     }
 }
 
