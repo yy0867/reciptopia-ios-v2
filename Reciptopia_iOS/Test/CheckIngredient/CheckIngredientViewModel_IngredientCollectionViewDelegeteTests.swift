@@ -25,7 +25,7 @@ class CheckIngredientViewModel_IngredientCollectionViewDelegeteTests: XCTestCase
     }
     
     func randomIngredientNames() -> [String] {
-        let randomCount = Int.random(in: 1...10)
+        let randomCount = Int.random(in: 10...30)
         var ingredients = [String]()
         for i in 0..<randomCount { ingredients.append("ingredient \(i)") }
         return ingredients

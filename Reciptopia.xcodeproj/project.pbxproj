@@ -519,12 +519,12 @@
 			isa = PBXGroup;
 			children = (
 				A54158D027F328AB00C851A2 /* Reciptopia_iOS.h */,
+				A516027C27FEA8030061170A /* DIContainer.swift */,
 				A541592F27F34CD700C851A2 /* Extension */,
 				A54158EB27F3290400C851A2 /* PictureIngredient */,
 				A570E2BD27F6ABAA00F734C0 /* CheckIngredient */,
 				A5BFC23227FC0F9B0030776C /* SearchIngredient */,
 				A54158DB27F328AB00C851A2 /* Test */,
-				A516027C27FEA8030061170A /* DIContainer.swift */,
 			);
 			path = Reciptopia_iOS;
 			sourceTree = "<group>";

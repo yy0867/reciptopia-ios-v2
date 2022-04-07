@@ -33,7 +33,7 @@ class SearchIngredientViewControllerTests: XCTestCase {
             })
             .disposed(by: disposeBag)
         
-        for _ in 0..<Int.random(in: 0...100) {
+        for _ in 0..<Int.random(in: 1...100) {
             text = randomString()
             viewController.searchBar.text = text
             viewController.searchBar.delegate?.searchBarSearchButtonClicked?(viewController.searchBar)

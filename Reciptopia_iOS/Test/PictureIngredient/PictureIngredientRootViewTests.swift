@@ -24,17 +24,20 @@ class PictureIngredientRootViewTests: XCTestCase {
         let randomCount = Int.random(in: 0...10)
         
         // When
+        
         for _ in 0..<randomCount { viewModel.addPicture(data: Data()) }
         
         // Then
-        XCTAssertEqual(
-            rootView.managePictureButton.title(for: .normal),
-            "\(randomCount) / \(viewModel.maxPictureCount)"
-        )
-        XCTAssertEqual(
-            rootView.analyzePictureButton.title(for: .normal),
-            "\(randomCount)개의 재료 분석하기"
-        )
+        DispatchQueue.main.async {
+            XCTAssertEqual(
+                self.rootView.managePictureButton.title(for: .normal),
+                "\(randomCount) / \(self.viewModel.maxPictureCount)"
+            )
+            XCTAssertEqual(
+                self.rootView.analyzePictureButton.title(for: .normal),
+                "\(randomCount)개의 재료 분석하기"
+            )
+        }
     }
     
     func test_MaskingStack_Buttons_shouldUnabled_whenPictureIsEmpty() {
@@ -44,8 +47,10 @@ class PictureIngredientRootViewTests: XCTestCase {
         viewModel.ingredientPictures.accept([])
         
         // Then
-        XCTAssertFalse(rootView.managePictureButton.isEnabled)
-        XCTAssertFalse(rootView.analyzePictureButton.isEnabled)
+        DispatchQueue.main.async {
+            XCTAssertFalse(self.rootView.managePictureButton.isEnabled)
+            XCTAssertFalse(self.rootView.analyzePictureButton.isEnabled)
+        }
     }
     
     func test_MaskingStack_Buttons_shouldEnabled_whenPictureIsNotEmpty() {
@@ -64,11 +69,15 @@ class PictureIngredientRootViewTests: XCTestCase {
         // Given
         
         // When
-        for _ in 1...viewModel.maxPictureCount { viewModel.addPicture(data: Data()) }
+        for _ in 1...viewModel.maxPictureCount {
+            viewModel.addPicture(data: Data())
+        }
         
         // Then
-        XCTAssertFalse(rootView.presentPhotoAlbumButton.isEnabled)
-        XCTAssertFalse(rootView.takePhotoButton.isEnabled)
+        DispatchQueue.main.async {
+            XCTAssertFalse(self.rootView.presentPhotoAlbumButton.isEnabled)
+            XCTAssertFalse(self.rootView.takePhotoButton.isEnabled)
+        }
     }
     
     func test_PhotoUtilStack_Buttons_shouldEnabled_whenPictureIsNotFull() {
@@ -79,7 +88,9 @@ class PictureIngredientRootViewTests: XCTestCase {
         for _ in 0..<randomCount { viewModel.addPicture(data: Data()) }
         
         // Then
-        XCTAssertTrue(rootView.presentPhotoAlbumButton.isEnabled)
-        XCTAssertTrue(rootView.takePhotoButton.isEnabled)
+        DispatchQueue.main.async {
+            XCTAssertTrue(self.rootView.presentPhotoAlbumButton.isEnabled)
+            XCTAssertTrue(self.rootView.takePhotoButton.isEnabled)
+        }
     }
 }
