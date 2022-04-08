@@ -48,6 +48,7 @@ public final class SearchIngredientViewModel: SearchIngredientViewModelProtocol 
     public func searchButtonClicked() {
         let ingredientNames = ingredients.value.map { $0.name }.joined(separator: ", ")
         print(ingredientNames)
+        ingredients.accept([])
     }
 }
 
