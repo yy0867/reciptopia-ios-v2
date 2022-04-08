@@ -60,7 +60,7 @@ class CheckIngredientViewModel_IngredientCollectionViewDelegeteTests: XCTestCase
         
         // When
         let index = Int.random(in: 0..<ingredientNames.count)
-        let nameAtIndex = viewModel.getName(at: index)
+        let nameAtIndex = rootView.getName(at: index)
         let expectedNameAtIndex = ingredientNames[index]
         
         // Then
@@ -76,7 +76,7 @@ class CheckIngredientViewModel_IngredientCollectionViewDelegeteTests: XCTestCase
         
         // When
         let index = Int.random(in: 1..<ingredientNames.count)
-        let isMainIngredientAtIndex = viewModel.isMainIngredient(at: index)
+        let isMainIngredientAtIndex = rootView.isMainIngredient(at: index)
         
         // Then
         XCTAssertFalse(isMainIngredientAtIndex)
@@ -88,7 +88,7 @@ class CheckIngredientViewModel_IngredientCollectionViewDelegeteTests: XCTestCase
         ingredientNames.forEach { viewModel.addIngredient(name: $0) }
         
         // When
-        let ingredientsCount = viewModel.getCount()
+        let ingredientsCount = rootView.getCount()
         
         // Then
         XCTAssertEqual(ingredientNames.count, ingredientsCount)
@@ -109,7 +109,7 @@ class CheckIngredientViewModel_IngredientCollectionViewDelegeteTests: XCTestCase
             .disposed(by: disposeBag)
         
         let index = Int.random(in: 0..<ingredientNames.count)
-        viewModel.remove(at: index)
+        rootView.remove(at: index)
         ingredientNames.remove(at: index)
         
         // Then
@@ -132,7 +132,7 @@ class CheckIngredientViewModel_IngredientCollectionViewDelegeteTests: XCTestCase
             .disposed(by: disposeBag)
         
         let index = Int.random(in: 0..<ingredientNames.count)
-        viewModel.changeState(isMainIngredient: true, at: index)
+        rootView.changeState(to: .mainIngredient, at: index)
         
         // Then
         XCTAssertFalse(receivedIngredientStates.isEmpty)
