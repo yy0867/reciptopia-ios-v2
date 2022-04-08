@@ -10,7 +10,7 @@ import ReciptopiaUIKit
 final class HistoryAndFavoriteRootView: BaseView {
     
     // MARK: - Properties
-    let searchIngredientViewModelInput: SearchIngredientViewModelInput
+    let searchIngredientViewModelAction: SearchIngredientViewModelAction
     
     lazy var pageSegment: PageSegmentedControl = {
         let segmentedControl = PageSegmentedControl()
@@ -32,8 +32,8 @@ final class HistoryAndFavoriteRootView: BaseView {
     }()
     
     // MARK: - Methods
-    init(frame: CGRect = .zero, searchIngredientViewModelInput: SearchIngredientViewModelInput) {
-        self.searchIngredientViewModelInput = searchIngredientViewModelInput
+    init(frame: CGRect = .zero, searchIngredientViewModelAction: SearchIngredientViewModelAction) {
+        self.searchIngredientViewModelAction = searchIngredientViewModelAction
         super.init(frame: frame)
     }
     
@@ -79,6 +79,6 @@ final class HistoryAndFavoriteRootView: BaseView {
     
     @objc
     func searchButtonClicked() {
-        searchIngredientViewModelInput.searchButtonClicked()
+        searchIngredientViewModelAction.searchButtonClicked()
     }
 }
