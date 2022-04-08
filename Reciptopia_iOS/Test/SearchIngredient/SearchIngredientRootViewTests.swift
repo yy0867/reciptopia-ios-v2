@@ -12,7 +12,7 @@ import RxSwift
 
 class SearchIngredientRootViewTests: XCTestCase {
     
-    var viewModel: SearchIngredientViewModel!
+    var viewModel: SearchIngredientViewModelProtocol!
     var rootView: SearchIngredientRootView!
     let disposeBag = DisposeBag()
     
@@ -73,11 +73,14 @@ class SearchIngredientRootViewTests: XCTestCase {
         
         // Then
         let indexPath = IndexPath(item: index, section: 0)
-        guard let cell = rootView.ingredientCollectionView.dequeue(IngredientCell.self, at: indexPath) else {
+        guard let cell = rootView.ingredientCollectionView.dataSource?.collectionView(
+            rootView.ingredientCollectionView,
+            cellForItemAt: indexPath
+        ) as? IngredientCell else {
             XCTFail()
             return
         }
-//        print(cell.backgroundColor)
-//        XCTAssertEqual(UIColor.mainIngredient, cell.backgroundColor)
+        
+        XCTAssertEqual(UIColor.mainIngredient, cell.backgroundColor)
     }
 }
