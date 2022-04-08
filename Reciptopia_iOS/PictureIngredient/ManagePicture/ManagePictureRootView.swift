@@ -14,7 +14,6 @@ final class ManagePictureRootView: BaseView {
     // MARK: - Properties
     let viewModel: PictureIngredientViewModelProtocol
     let disposeBag = DisposeBag()
-    var selectedIndexForRemove = Set<Int>()
     
     lazy var imageCollectionView: UICollectionView = {
         let collectionView = UICollectionView(direction: .vertical)
@@ -59,6 +58,12 @@ final class ManagePictureRootView: BaseView {
 extension ManagePictureRootView {
     func bindViewModel() {
         viewModel.ingredientPictures
+            .bind(onNext: { [weak self] _ in
+                self?.imageCollectionView.reloadData()
+            })
+            .disposed(by: disposeBag)
+        
+        viewModel.ingredientPictures
             .map { "\($0.count)개의 재료 분석하기" }
             .bind(to: analyzeIngredientButton.rx.title())
             .disposed(by: disposeBag)
@@ -75,12 +80,12 @@ extension ManagePictureRootView: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let cell = collectionView.cellForItem(at: indexPath) as? ImageCell else { return }
         
-        if selectedIndexForRemove.contains(indexPath.item) {
+        if viewModel.selectedIndexForRemove.contains(indexPath.item) {
             cell.deselectCell()
-            selectedIndexForRemove.remove(indexPath.item)
+            viewModel.removeIndexForRemove(indexPath.item)
         } else {
             cell.selectCell()
-            selectedIndexForRemove.insert(indexPath.item)
+            viewModel.insertIndexForRemove(indexPath.item)
         }
     }
 }
@@ -100,7 +105,7 @@ extension ManagePictureRootView: UICollectionViewDataSource {
         let image = UIImage(data: imageData)
         cell.setImage(image)
         
-        if selectedIndexForRemove.contains(indexPath.item) { cell.selectCell() }
+        if viewModel.selectedIndexForRemove.contains(indexPath.item) { cell.selectCell() }
         else { cell.deselectCell() }
         
         return cell

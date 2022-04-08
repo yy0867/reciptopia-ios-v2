@@ -11,7 +11,9 @@ import RxRelay
 
 protocol PictureIngredientViewModelInput {
     func addPicture(data: Data)
-    func removePicture(at index: Int)
+    func removeSelectedPictures()
+    func insertIndexForRemove(_ index: Int)
+    func removeIndexForRemove(_ index: Int)
 }
 
 protocol PictureIngredientViewModelAction {
@@ -24,6 +26,7 @@ protocol PictureIngredientViewModelAction {
 
 protocol PictureIngredientViewModelOutput {
     var ingredientPictures: BehaviorRelay<[Data]> { get }
+    var selectedIndexForRemove: Set<Int> { get set }
     var action: PublishRelay<PictureIngredientAction> { get }
     var maxPictureCount: Int { get }
     var remainPictureCount: Int { get }
@@ -39,6 +42,7 @@ public final class PictureIngredientViewModel: PictureIngredientViewModelProtoco
     let ingredientPictures = BehaviorRelay<[Data]>(value: [])
     let action = PublishRelay<PictureIngredientAction>()
     let maxPictureCount = 10
+    var selectedIndexForRemove = Set<Int>()
     
     var remainPictureCount: Int {
         maxPictureCount - ingredientPictures.value.count
@@ -54,8 +58,18 @@ public final class PictureIngredientViewModel: PictureIngredientViewModelProtoco
         ingredientPictures.append(data)
     }
     
-    func removePicture(at index: Int) {
-        
+    func removeSelectedPictures() {
+        let sortedIndexForRemove = selectedIndexForRemove.sorted(by: >)
+        sortedIndexForRemove.forEach { ingredientPictures.remove(at: $0) }
+        selectedIndexForRemove.removeAll()
+    }
+    
+    func insertIndexForRemove(_ index: Int) {
+        selectedIndexForRemove.insert(index)
+    }
+    
+    func removeIndexForRemove(_ index: Int) {
+        selectedIndexForRemove.remove(index)
     }
     
     // MARK: @objc Methods
