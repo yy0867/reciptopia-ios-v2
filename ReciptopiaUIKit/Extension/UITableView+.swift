@@ -13,4 +13,13 @@ public extension UITableView {
         let reuseIdentifier = cellClass.reuseIdentifier
         register(cellClass.self, forCellReuseIdentifier: reuseIdentifier)
     }
+    
+    func dequeue<T>(_ CellClass: T.Type, at indexPath: IndexPath) -> T? where T: UITableViewCell {
+        guard let cell = self.dequeueReusableCell(
+            withIdentifier: T.reuseIdentifier,
+            for: indexPath
+        ) as? T else { return nil }
+        
+        return cell
+    }
 }
