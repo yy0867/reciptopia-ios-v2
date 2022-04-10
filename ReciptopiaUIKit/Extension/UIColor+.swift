@@ -15,6 +15,7 @@ public extension UIColor {
     static let brightGray = UIColor(0xE5E5E5)
     static let searchHistoryTint = UIColor(0xBEBEF0)
     static let favoriteStartTint = UIColor(0xEFDD3F)
+    static let editProfileButtonBackground = UIColor(0xF9F9F9)
     
     // MARK: - Methods
     convenience init(_ hex: Int) {
