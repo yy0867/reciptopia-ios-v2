@@ -102,7 +102,8 @@ extension PictureIngredientViewController {
     }
     
     private func presentManagePicture() {
-        
+        let vc = ManagePictureViewController(viewModel: viewModel)
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     private func presentAnalyze() {
