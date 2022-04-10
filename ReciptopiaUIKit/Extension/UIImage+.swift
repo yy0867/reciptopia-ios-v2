@@ -20,4 +20,8 @@ public extension UIImage {
         
         return icon
     }
+    
+    static var defaultProfileIcon: UIImage? {
+        return UIImage(named: "DefaultProfile")
+    }
 }
