@@ -160,7 +160,11 @@ final class SignInRootView: BaseView {
     }
     
     override func addTargets() {
-        
+        presentSignUpButton.addTarget(
+            viewModel,
+            action: #selector(SignInViewModel.presentSignUp),
+            for: .touchUpInside
+        )
     }
 }
 
