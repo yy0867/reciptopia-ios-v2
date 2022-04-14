@@ -24,4 +24,8 @@ public extension UIImage {
     static var defaultProfileIcon: UIImage? {
         return UIImage(named: "DefaultProfile")
     }
+    
+    static var appIcon: UIImage? {
+        return UIImage(systemName: "photo")
+    }
 }
