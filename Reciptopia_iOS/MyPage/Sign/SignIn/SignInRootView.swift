@@ -12,7 +12,7 @@ import RxSwift
 final class SignInRootView: BaseView {
     
     // MARK: - Properties
-    let viewModel: SignInViewModel
+    let viewModel: SignInViewModelProtocol
     let disposeBag = DisposeBag()
     
     lazy var signInWithAppIconStack: UIStackView = {
@@ -130,7 +130,7 @@ final class SignInRootView: BaseView {
     }()
     
     // MARK: - Methods
-    init(frame: CGRect = .zero, viewModel: SignInViewModel) {
+    init(frame: CGRect = .zero, viewModel: SignInViewModelProtocol) {
         self.viewModel = viewModel
         super.init(frame: frame)
         bindViewModel()
