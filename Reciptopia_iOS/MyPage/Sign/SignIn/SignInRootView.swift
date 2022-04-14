@@ -29,7 +29,7 @@ final class SignInRootView: BaseView {
     
     lazy var appIconImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(systemName: "photo")
+        imageView.image = .appIcon
         imageView.contentMode = .scaleAspectFit
         imageView.heightAnchor.constraint(equalToConstant: 65).isActive = true
         return imageView
