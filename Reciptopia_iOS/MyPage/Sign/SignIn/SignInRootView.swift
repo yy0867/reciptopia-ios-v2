@@ -31,7 +31,7 @@ final class SignInRootView: BaseView {
         let imageView = UIImageView()
         imageView.image = .appIcon
         imageView.contentMode = .scaleAspectFit
-        imageView.heightAnchor.constraint(equalToConstant: 65).isActive = true
+        imageView.heightAnchor.constraint(equalToConstant: 80).isActive = true
         return imageView
     }()
     
@@ -49,6 +49,7 @@ final class SignInRootView: BaseView {
         field.borderStyle = .roundedRect
         field.returnKeyType = .next
         field.keyboardType = .emailAddress
+        field.textContentType = .emailAddress
         field.addDoneButton()
         return field
     }()
@@ -60,6 +61,7 @@ final class SignInRootView: BaseView {
         field.borderStyle = .roundedRect
         field.returnKeyType = .done
         field.isSecureTextEntry = true
+        field.textContentType = .password
         field.addDoneButton()
         return field
     }()
