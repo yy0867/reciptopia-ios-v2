@@ -59,7 +59,7 @@ class ProfileCell: UITableViewCell {
     
     lazy var editProfileButton: UIButton = {
         let button = UIButton(
-            backgroundColor: .editProfileBackground,
+            backgroundColor: .editProfileButtonBackground,
             titleColor: .black,
             title: "프로필 편집",
             font: .systemFont(ofSize: 13)
