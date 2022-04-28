@@ -14,9 +14,16 @@ public extension UIImage {
         return icon
     }
     
-    static var favoriteStarIcon: UIImage? {
+    static var selectedFavoriteStarIcon: UIImage? {
         let icon = UIImage(systemName: "star.fill")?
             .withTintColor(.favoriteStartTint, renderingMode: .alwaysOriginal)
+        
+        return icon
+    }
+    
+    static var unselectedFavoriteStarIcon: UIImage? {
+        let icon = UIImage(systemName: "star")?
+            .withTintColor(.gray, renderingMode: .alwaysOriginal)
         
         return icon
     }
@@ -27,5 +34,10 @@ public extension UIImage {
     
     static var appIcon: UIImage? {
         return UIImage(systemName: "photo")
+    }
+    
+    static var filteringImage: UIImage? {
+        return UIImage(systemName: "line.3.horizontal.decrease")?
+            .withTintColor(.black, renderingMode: .alwaysOriginal)
     }
 }
