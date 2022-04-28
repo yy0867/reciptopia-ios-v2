@@ -56,6 +56,7 @@ final class SearchIngredientRootView: BaseView {
 
 // MARK: - Bind ViewModel
 extension SearchIngredientRootView {
+    
     func bindViewModel() {
         viewModel.ingredients
             .bind(onNext: { [weak self] _ in

@@ -46,7 +46,7 @@ extension FavoritePostRootView {
     func bindViewModel() {
         viewModel.favoritePosts
             .bind(to: favoritePostTableView.rx.items(cellIdentifier: UITableViewCell.reuseIdentifier)) { index, item, cell in
-                cell.setImage(.favoriteStarIcon)
+                cell.setImage(.selectedFavoriteStarIcon)
                 cell.setTitle(item.postName)
             }
             .disposed(by: disposeBag)

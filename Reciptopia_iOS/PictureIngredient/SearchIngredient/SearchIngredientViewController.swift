@@ -6,11 +6,14 @@
 //
 
 import ReciptopiaUIKit
+import RxSwift
+import RxCocoa
 
 public class SearchIngredientViewController: BaseViewController {
     
     // MARK: - Properties
     let viewModel: SearchIngredientViewModelProtocol
+    let disposeBag = DisposeBag()
     
     lazy var searchBar: UISearchBar = {
         let searchBar = UISearchBar()
@@ -26,6 +29,12 @@ public class SearchIngredientViewController: BaseViewController {
     public init(viewModel: SearchIngredientViewModelProtocol) {
         self.viewModel = viewModel
         super.init()
+        
+        viewModel.searchPublisher
+            .bind(onNext: { [weak self] _ in
+                self?.searchBar.endEditing(true)
+            })
+            .disposed(by: disposeBag)
     }
     
     public override func viewDidLoad() {
@@ -43,12 +52,16 @@ public class SearchIngredientViewController: BaseViewController {
 // MARK: - UISearchBar Delegate
 extension SearchIngredientViewController: UISearchBarDelegate {
     public func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        
+        dismiss(animated: true)
     }
     
     public func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         guard let text = searchBar.text, !text.isEmpty else { return }
         searchBar.text = ""
         viewModel.addIngredient(name: text)
+    }
+    
+    public func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        viewModel.searchBarClicked()
     }
 }

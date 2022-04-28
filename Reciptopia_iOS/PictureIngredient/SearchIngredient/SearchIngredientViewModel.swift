@@ -12,10 +12,13 @@ public protocol SearchIngredientViewModelInput {
     func addIngredient(name: String)
     func changeState(isMainIngredient state: Bool, at index: Int)
     func remove(at index: Int)
+    func searchBarClicked()
 }
 
 public protocol SearchIngredientViewModelAction {
     func searchButtonClicked()
+    var searchPublisher: PublishRelay<[Ingredient]> { get }
+    var searchBarStartEditing: PublishRelay<Void> { get }
 }
 
 public protocol SearchIngredientViewModelOutput {
@@ -34,6 +37,8 @@ public final class SearchIngredientViewModel: SearchIngredientViewModelProtocol 
     
     // MARK: - Properties
     public let ingredients = BehaviorRelay<[Ingredient]>(value: [])
+    public let searchPublisher = PublishRelay<[Ingredient]>()
+    public let searchBarStartEditing = PublishRelay<Void>()
     
     // MARK: - Methods
     public init() {
@@ -48,7 +53,11 @@ public final class SearchIngredientViewModel: SearchIngredientViewModelProtocol 
     public func searchButtonClicked() {
         let ingredientNames = ingredients.value.map { $0.name }.joined(separator: ", ")
         print(ingredientNames)
-        ingredients.accept([])
+        searchPublisher.accept(ingredients.value)
+    }
+    
+    public func searchBarClicked() {
+        searchBarStartEditing.accept(())
     }
 }
 
